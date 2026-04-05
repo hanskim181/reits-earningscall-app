@@ -1,0 +1,1562 @@
+[
+  {
+    "ticker": "BXP",
+    "company_name": "BXP Inc",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 10683.7
+  },
+  {
+    "ticker": "VNO",
+    "company_name": "Vornado Realty Trust",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 6388.0
+  },
+  {
+    "ticker": "KRC",
+    "company_name": "Kilroy Realty Corporation",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 4419.7
+  },
+  {
+    "ticker": "CUZ",
+    "company_name": "Cousins Properties Incorporated",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 4328.7
+  },
+  {
+    "ticker": "SLG",
+    "company_name": "SL Green Realty Corp.",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 3257.3
+  },
+  {
+    "ticker": "CDP",
+    "company_name": "COPT Defense Properties",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 3138.1
+  },
+  {
+    "ticker": "HIW",
+    "company_name": "Highwoods Properties, Inc.",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 2837.5
+  },
+  {
+    "ticker": "DEI",
+    "company_name": "Douglas Emmett, Inc",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1840.2
+  },
+  {
+    "ticker": "ESRT",
+    "company_name": "Empire State Realty Trust, Inc. Class A",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1099.5
+  },
+  {
+    "ticker": "PDM",
+    "company_name": "Piedmont Realty Trust Inc Class A",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1037.6
+  },
+  {
+    "ticker": "DEA",
+    "company_name": "Easterly Government Properties Inc",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 977.0
+  },
+  {
+    "ticker": "HPP",
+    "company_name": "Hudson Pacific Properties, Inc.",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 586.6
+  },
+  {
+    "ticker": "BDN",
+    "company_name": "Brandywine Realty Trust",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 505.3
+  },
+  {
+    "ticker": "NLOP",
+    "company_name": "Net Lease Office Properties",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 382.1
+  },
+  {
+    "ticker": "CIO",
+    "company_name": "City Office REIT, Inc.",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 282.1
+  },
+  {
+    "ticker": "ONL",
+    "company_name": "Orion Properties Inc.",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 126.9
+  },
+  {
+    "ticker": "FSP",
+    "company_name": "Franklin Street Properties Corp.",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 98.0
+  },
+  {
+    "ticker": "CMCT",
+    "company_name": "Creative Media & Community Trust Corporation",
+    "sector": "Office",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 0.3
+  },
+  {
+    "ticker": "PLD",
+    "company_name": "Prologis, Inc.",
+    "sector": "Industrial",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 118459.0
+  },
+  {
+    "ticker": "EGP",
+    "company_name": "EastGroup Properties, Inc.",
+    "sector": "Industrial",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 9501.0
+  },
+  {
+    "ticker": "REXR",
+    "company_name": "Rexford Industrial Realty, Inc.",
+    "sector": "Industrial",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 9014.4
+  },
+  {
+    "ticker": "LINE",
+    "company_name": "Lineage, Inc.",
+    "sector": "Industrial",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 8000.7
+  },
+  {
+    "ticker": "FR",
+    "company_name": "First Industrial Realty Trust, Inc.",
+    "sector": "Industrial",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 7582.4
+  },
+  {
+    "ticker": "STAG",
+    "company_name": "STAG Industrial, Inc.",
+    "sector": "Industrial",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 6860.1
+  },
+  {
+    "ticker": "TRNO",
+    "company_name": "Terreno Realty Corporation",
+    "sector": "Industrial",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 6048.3
+  },
+  {
+    "ticker": "COLD",
+    "company_name": "Americold Realty Trust, Inc.",
+    "sector": "Industrial",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 3661.5
+  },
+  {
+    "ticker": "LXP",
+    "company_name": "LXP Industrial Trust",
+    "sector": "Industrial",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 2932.4
+  },
+  {
+    "ticker": "IIPR",
+    "company_name": "Innovative Industrial Properties Inc",
+    "sector": "Industrial",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1326.6
+  },
+  {
+    "ticker": "PLYM",
+    "company_name": "Plymouth Industrial REIT, Inc.",
+    "sector": "Industrial",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 974.8
+  },
+  {
+    "ticker": "ILPT",
+    "company_name": "Industrial Logistics Properties Trust",
+    "sector": "Industrial",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 366.4
+  },
+  {
+    "ticker": "MDV",
+    "company_name": "Modiv Industrial Inc. Class C",
+    "sector": "Industrial",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 145.5
+  },
+  {
+    "ticker": "KIM",
+    "company_name": "Kimco Realty Corporation",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 13773.4
+  },
+  {
+    "ticker": "REG",
+    "company_name": "Regency Centers Corporation",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 12530.7
+  },
+  {
+    "ticker": "FRT",
+    "company_name": "Federal Realty Investment Trust",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 8646.6
+  },
+  {
+    "ticker": "BRX",
+    "company_name": "Brixmor Property Group, Inc.",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 8024.9
+  },
+  {
+    "ticker": "KRG",
+    "company_name": "Kite Realty Group Trust",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 5189.6
+  },
+  {
+    "ticker": "PECO",
+    "company_name": "Phillips Edison & Company, Inc.",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 4459.5
+  },
+  {
+    "ticker": "SKT",
+    "company_name": "Tanger Inc.",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 3777.6
+  },
+  {
+    "ticker": "AKR",
+    "company_name": "Acadia Realty Trust",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 2689.9
+  },
+  {
+    "ticker": "CURB",
+    "company_name": "Curbline Properties Corp.",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 2442.0
+  },
+  {
+    "ticker": "UE",
+    "company_name": "Urban Edge Properties",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 2413.1
+  },
+  {
+    "ticker": "IVT",
+    "company_name": "InvenTrust Properties Corp",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 2188.2
+  },
+  {
+    "ticker": "ALEX",
+    "company_name": "Alexander & Baldwin, Inc.",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 1500.8
+  },
+  {
+    "ticker": "BFS",
+    "company_name": "Saul Centers, Inc.",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 763.1
+  },
+  {
+    "ticker": "WSR",
+    "company_name": "Whitestone REIT",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 706.9
+  },
+  {
+    "ticker": "CTO",
+    "company_name": "CTO Realty Growth Inc",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 596.0
+  },
+  {
+    "ticker": "SITC",
+    "company_name": "SITE Centers Corp.",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 336.7
+  },
+  {
+    "ticker": "WHLR",
+    "company_name": "Wheeler Real Estate Investment Trust, Inc.",
+    "sector": "Retail",
+    "subsector": "Shopping Centers",
+    "reit_type": "Equity",
+    "market_cap_musd": 1.0
+  },
+  {
+    "ticker": "SPG",
+    "company_name": "Simon Property Group, Inc.",
+    "sector": "Retail",
+    "subsector": "Regional Malls",
+    "reit_type": "Equity",
+    "market_cap_musd": 60392.4
+  },
+  {
+    "ticker": "MAC",
+    "company_name": "Macerich Company",
+    "sector": "Retail",
+    "subsector": "Regional Malls",
+    "reit_type": "Equity",
+    "market_cap_musd": 4661.1
+  },
+  {
+    "ticker": "CBL",
+    "company_name": "CBL & Associates Properties, Inc.",
+    "sector": "Retail",
+    "subsector": "Regional Malls",
+    "reit_type": "Equity",
+    "market_cap_musd": 1144.6
+  },
+  {
+    "ticker": "O",
+    "company_name": "Realty Income Corporation",
+    "sector": "Retail",
+    "subsector": "Free Standing",
+    "reit_type": "Equity",
+    "market_cap_musd": 51539.4
+  },
+  {
+    "ticker": "ADC",
+    "company_name": "Agree Realty Corporation",
+    "sector": "Retail",
+    "subsector": "Free Standing",
+    "reit_type": "Equity",
+    "market_cap_musd": 8278.7
+  },
+  {
+    "ticker": "NNN",
+    "company_name": "NNN REIT, Inc.",
+    "sector": "Retail",
+    "subsector": "Free Standing",
+    "reit_type": "Equity",
+    "market_cap_musd": 7451.8
+  },
+  {
+    "ticker": "EPRT",
+    "company_name": "Essential Properties Realty Trust, Inc.",
+    "sector": "Retail",
+    "subsector": "Free Standing",
+    "reit_type": "Equity",
+    "market_cap_musd": 5858.2
+  },
+  {
+    "ticker": "FCPT",
+    "company_name": "Four Corners Property Trust, Inc.",
+    "sector": "Retail",
+    "subsector": "Free Standing",
+    "reit_type": "Equity",
+    "market_cap_musd": 2446.3
+  },
+  {
+    "ticker": "GTY",
+    "company_name": "Getty Realty Corp.",
+    "sector": "Retail",
+    "subsector": "Free Standing",
+    "reit_type": "Equity",
+    "market_cap_musd": 1580.4
+  },
+  {
+    "ticker": "NTST",
+    "company_name": "NETSTREIT Corp.",
+    "sector": "Retail",
+    "subsector": "Free Standing",
+    "reit_type": "Equity",
+    "market_cap_musd": 1474.0
+  },
+  {
+    "ticker": "PSTL",
+    "company_name": "Postal Realty Trust, Inc. Class A",
+    "sector": "Retail",
+    "subsector": "Free Standing",
+    "reit_type": "Equity",
+    "market_cap_musd": 396.7
+  },
+  {
+    "ticker": "FVR",
+    "company_name": "FrontView REIT, Inc.",
+    "sector": "Retail",
+    "subsector": "Free Standing",
+    "reit_type": "Equity",
+    "market_cap_musd": 302.0
+  },
+  {
+    "ticker": "PINE",
+    "company_name": "Alpine Income Property Trust, Inc.",
+    "sector": "Retail",
+    "subsector": "Free Standing",
+    "reit_type": "Equity",
+    "market_cap_musd": 238.5
+  },
+  {
+    "ticker": "AVB",
+    "company_name": "AvalonBay Communities, Inc.",
+    "sector": "Residential",
+    "subsector": "Apartments",
+    "reit_type": "Equity",
+    "market_cap_musd": 25812.9
+  },
+  {
+    "ticker": "EQR",
+    "company_name": "Equity Residential",
+    "sector": "Residential",
+    "subsector": "Apartments",
+    "reit_type": "Equity",
+    "market_cap_musd": 23951.7
+  },
+  {
+    "ticker": "ESS",
+    "company_name": "Essex Property Trust, Inc.",
+    "sector": "Residential",
+    "subsector": "Apartments",
+    "reit_type": "Equity",
+    "market_cap_musd": 16832.7
+  },
+  {
+    "ticker": "MAA",
+    "company_name": "Mid-America Apartment Communities, Inc.",
+    "sector": "Residential",
+    "subsector": "Apartments",
+    "reit_type": "Equity",
+    "market_cap_musd": 16238.7
+  },
+  {
+    "ticker": "UDR",
+    "company_name": "UDR, Inc.",
+    "sector": "Residential",
+    "subsector": "Apartments",
+    "reit_type": "Equity",
+    "market_cap_musd": 12147.7
+  },
+  {
+    "ticker": "CPT",
+    "company_name": "Camden Property Trust",
+    "sector": "Residential",
+    "subsector": "Apartments",
+    "reit_type": "Equity",
+    "market_cap_musd": 11762.3
+  },
+  {
+    "ticker": "IRT",
+    "company_name": "Independence Realty Trust, Inc.",
+    "sector": "Residential",
+    "subsector": "Apartments",
+    "reit_type": "Equity",
+    "market_cap_musd": 4179.7
+  },
+  {
+    "ticker": "ELME",
+    "company_name": "Elme Communities",
+    "sector": "Residential",
+    "subsector": "Apartments",
+    "reit_type": "Equity",
+    "market_cap_musd": 1534.0
+  },
+  {
+    "ticker": "VRE",
+    "company_name": "Veris Residential, Inc.",
+    "sector": "Residential",
+    "subsector": "Apartments",
+    "reit_type": "Equity",
+    "market_cap_musd": 1383.2
+  },
+  {
+    "ticker": "CSR",
+    "company_name": "Centerspace",
+    "sector": "Residential",
+    "subsector": "Apartments",
+    "reit_type": "Equity",
+    "market_cap_musd": 1116.0
+  },
+  {
+    "ticker": "AIV",
+    "company_name": "Apartment Investment and Management Company Class A",
+    "sector": "Residential",
+    "subsector": "Apartments",
+    "reit_type": "Equity",
+    "market_cap_musd": 843.3
+  },
+  {
+    "ticker": "NXRT",
+    "company_name": "NexPoint Residential Trust, Inc.",
+    "sector": "Residential",
+    "subsector": "Apartments",
+    "reit_type": "Equity",
+    "market_cap_musd": 769.7
+  },
+  {
+    "ticker": "BRT",
+    "company_name": "BRT Apartments Corp",
+    "sector": "Residential",
+    "subsector": "Apartments",
+    "reit_type": "Equity",
+    "market_cap_musd": 278.3
+  },
+  {
+    "ticker": "SUI",
+    "company_name": "Sun Communities, Inc.",
+    "sector": "Residential",
+    "subsector": "Manufactured Homes",
+    "reit_type": "Equity",
+    "market_cap_musd": 15323.8
+  },
+  {
+    "ticker": "ELS",
+    "company_name": "Equity LifeStyle Properties, Inc.",
+    "sector": "Residential",
+    "subsector": "Manufactured Homes",
+    "reit_type": "Equity",
+    "market_cap_musd": 11745.6
+  },
+  {
+    "ticker": "UMH",
+    "company_name": "UMH Properties, Inc.",
+    "sector": "Residential",
+    "subsector": "Manufactured Homes",
+    "reit_type": "Equity",
+    "market_cap_musd": 1351.2
+  },
+  {
+    "ticker": "INVH",
+    "company_name": "Invitation Homes, Inc.",
+    "sector": "Residential",
+    "subsector": "Single Family Homes",
+    "reit_type": "Equity",
+    "market_cap_musd": 17032.0
+  },
+  {
+    "ticker": "AMH",
+    "company_name": "American Homes 4 Rent Class A",
+    "sector": "Residential",
+    "subsector": "Single Family Homes",
+    "reit_type": "Equity",
+    "market_cap_musd": 11861.8
+  },
+  {
+    "ticker": "BHM",
+    "company_name": "Bluerock Homes Trust, Inc. Class A",
+    "sector": "Residential",
+    "subsector": "Single Family Homes",
+    "reit_type": "Equity",
+    "market_cap_musd": 41.5
+  },
+  {
+    "ticker": "WPC",
+    "company_name": "W. P. Carey Inc.",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 14093.3
+  },
+  {
+    "ticker": "BNL",
+    "company_name": "Broadstone Net Lease, Inc.",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 3283.8
+  },
+  {
+    "ticker": "GNL",
+    "company_name": "Global Net Lease Inc",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1900.3
+  },
+  {
+    "ticker": "AAT",
+    "company_name": "American Assets Trust, Inc.",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1157.3
+  },
+  {
+    "ticker": "ALX",
+    "company_name": "Alexander's, Inc.",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1113.1
+  },
+  {
+    "ticker": "JBGS",
+    "company_name": "JBG SMITH Properties",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1006.7
+  },
+  {
+    "ticker": "AHH",
+    "company_name": "Armada Hoffler Properties, Inc.",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 530.6
+  },
+  {
+    "ticker": "PKST",
+    "company_name": "Peakstone Realty Trust",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 527.5
+  },
+  {
+    "ticker": "GOOD",
+    "company_name": "Gladstone Commercial Corporation",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 493.8
+  },
+  {
+    "ticker": "OLP",
+    "company_name": "One Liberty Properties, Inc.",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 438.0
+  },
+  {
+    "ticker": "SVC",
+    "company_name": "Service Properties Trust",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 304.7
+  },
+  {
+    "ticker": "NXDT",
+    "company_name": "NexPoint Diversified Real Estate Trust",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 181.3
+  },
+  {
+    "ticker": "CLPR",
+    "company_name": "Clipper Realty, Inc.",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 61.7
+  },
+  {
+    "ticker": "MDRR",
+    "company_name": "Medalist Diversified REIT, Inc.",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 16.8
+  },
+  {
+    "ticker": "MKZR",
+    "company_name": "MacKenzie Realty Capital, Inc.",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 5.4
+  },
+  {
+    "ticker": "SQFT",
+    "company_name": "Presidio Property Trust, Inc. Class A",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 4.8
+  },
+  {
+    "ticker": "GIPR",
+    "company_name": "Generation Income Properties, Inc.",
+    "sector": "Diversified",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 3.4
+  },
+  {
+    "ticker": "HST",
+    "company_name": "Host Hotels & Resorts, Inc.",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 12299.3
+  },
+  {
+    "ticker": "RHP",
+    "company_name": "Ryman Hospitality Properties, Inc.",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 5960.2
+  },
+  {
+    "ticker": "APLE",
+    "company_name": "Apple Hospitality REIT Inc",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 2830.5
+  },
+  {
+    "ticker": "PK",
+    "company_name": "Park Hotels & Resorts, Inc.",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 2111.5
+  },
+  {
+    "ticker": "DRH",
+    "company_name": "DiamondRock Hospitality Company",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1848.5
+  },
+  {
+    "ticker": "SHO",
+    "company_name": "Sunstone Hotel Investors, Inc.",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1698.3
+  },
+  {
+    "ticker": "PEB",
+    "company_name": "Pebblebrook Hotel Trust",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1343.5
+  },
+  {
+    "ticker": "XHR",
+    "company_name": "Xenia Hotels & Resorts, Inc.",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1340.6
+  },
+  {
+    "ticker": "RLJ",
+    "company_name": "RLJ Lodging Trust",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1130.2
+  },
+  {
+    "ticker": "INN",
+    "company_name": "Summit Hotel Properties, Inc.",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 529.9
+  },
+  {
+    "ticker": "CLDT",
+    "company_name": "Chatham Lodging Trust",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 333.6
+  },
+  {
+    "ticker": "BHR",
+    "company_name": "Braemar Hotels & Resorts, Inc.",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 195.8
+  },
+  {
+    "ticker": "SOHO",
+    "company_name": "Sotherly Hotels Inc.",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 44.1
+  },
+  {
+    "ticker": "AHT",
+    "company_name": "Ashford Hospitality Trust, Inc.",
+    "sector": "Lodging/Resorts",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 26.1
+  },
+  {
+    "ticker": "PSA",
+    "company_name": "Public Storage",
+    "sector": "Self Storage",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 45524.4
+  },
+  {
+    "ticker": "EXR",
+    "company_name": "Extra Space Storage Inc.",
+    "sector": "Self Storage",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 27636.0
+  },
+  {
+    "ticker": "CUBE",
+    "company_name": "CubeSmart",
+    "sector": "Self Storage",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 8215.1
+  },
+  {
+    "ticker": "NSA",
+    "company_name": "National Storage Affiliates Trust",
+    "sector": "Self Storage",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 2156.5
+  },
+  {
+    "ticker": "SMA",
+    "company_name": "SmartStop Self Storage REIT, Inc.",
+    "sector": "Self Storage",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 960.7
+  },
+  {
+    "ticker": "SELF",
+    "company_name": "Global Self Storage, Inc.",
+    "sector": "Self Storage",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 57.8
+  },
+  {
+    "ticker": "WELL",
+    "company_name": "Welltower Inc.",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 127389.4
+  },
+  {
+    "ticker": "VTR",
+    "company_name": "Ventas, Inc.",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 36347.9
+  },
+  {
+    "ticker": "OHI",
+    "company_name": "Omega Healthcare Investors, Inc.",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 13080.3
+  },
+  {
+    "ticker": "DOC",
+    "company_name": "Healthpeak Properties, Inc.",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 11171.3
+  },
+  {
+    "ticker": "ARE",
+    "company_name": "Alexandria Real Estate Equities, Inc.",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 8466.1
+  },
+  {
+    "ticker": "CTRE",
+    "company_name": "CareTrust REIT, Inc.",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 8074.5
+  },
+  {
+    "ticker": "AHR",
+    "company_name": "American Healthcare REIT, Inc.",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 7933.1
+  },
+  {
+    "ticker": "HR",
+    "company_name": "Healthcare Realty Trust Incorporated Class A",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 5949.4
+  },
+  {
+    "ticker": "SBRA",
+    "company_name": "Sabra Health Care REIT, Inc.",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 4506.5
+  },
+  {
+    "ticker": "NHI",
+    "company_name": "National Health Investors, Inc.",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 3625.5
+  },
+  {
+    "ticker": "MPW",
+    "company_name": "Medical Properties Trust, Inc.",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 3009.8
+  },
+  {
+    "ticker": "LTC",
+    "company_name": "LTC Properties, Inc.",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1577.6
+  },
+  {
+    "ticker": "SILA",
+    "company_name": "Sila Realty Trust, Inc.",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1293.0
+  },
+  {
+    "ticker": "DHC",
+    "company_name": "Diversified Healthcare Trust",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 1170.0
+  },
+  {
+    "ticker": "UHT",
+    "company_name": "Universal Health Realty Income Trust",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 543.1
+  },
+  {
+    "ticker": "CHCT",
+    "company_name": "Community Healthcare Trust Incorporated",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 465.3
+  },
+  {
+    "ticker": "GMRE",
+    "company_name": "Global Medical REIT, Inc.",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 451.3
+  },
+  {
+    "ticker": "STRW",
+    "company_name": "Strawberry Fields REIT Inc",
+    "sector": "Health Care",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 170.2
+  },
+  {
+    "ticker": "WY",
+    "company_name": "Weyerhaeuser Company",
+    "sector": "Timberland",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 17181.7
+  },
+  {
+    "ticker": "RYN",
+    "company_name": "Rayonier Inc.",
+    "sector": "Timberland",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 3473.8
+  },
+  {
+    "ticker": "PCH",
+    "company_name": "PotlatchDeltic Corporation",
+    "sector": "Timberland",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 3074.6
+  },
+  {
+    "ticker": "AMT",
+    "company_name": "American Tower Corporation",
+    "sector": "Telecommunications",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 82191.0
+  },
+  {
+    "ticker": "CCI",
+    "company_name": "Crown Castle Inc.",
+    "sector": "Telecommunications",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 38658.5
+  },
+  {
+    "ticker": "SBAC",
+    "company_name": "SBA Communications Corp. Class A",
+    "sector": "Telecommunications",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 20895.9
+  },
+  {
+    "ticker": "EQIX",
+    "company_name": "Equinix, Inc.",
+    "sector": "Data Centers",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 74945.0
+  },
+  {
+    "ticker": "DLR",
+    "company_name": "Digital Realty Trust, Inc.",
+    "sector": "Data Centers",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 53143.1
+  },
+  {
+    "ticker": "VICI",
+    "company_name": "VICI Properties Inc",
+    "sector": "Gaming",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 30055.0
+  },
+  {
+    "ticker": "GLPI",
+    "company_name": "Gaming and Leisure Properties, Inc.",
+    "sector": "Gaming",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 12647.6
+  },
+  {
+    "ticker": "IRM",
+    "company_name": "Iron Mountain, Inc.",
+    "sector": "Specialty",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 24467.6
+  },
+  {
+    "ticker": "LAMR",
+    "company_name": "Lamar Advertising Company Class A",
+    "sector": "Specialty",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 10987.0
+  },
+  {
+    "ticker": "FRMI",
+    "company_name": "Fermi Inc.",
+    "sector": "Specialty",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 4781.4
+  },
+  {
+    "ticker": "MRP",
+    "company_name": "Millrose Properties Inc Class A",
+    "sector": "Specialty",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 4605.5
+  },
+  {
+    "ticker": "OUT",
+    "company_name": "OUTFRONT Media Inc.",
+    "sector": "Specialty",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 4025.3
+  },
+  {
+    "ticker": "EPR",
+    "company_name": "EPR Properties",
+    "sector": "Specialty",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 3795.6
+  },
+  {
+    "ticker": "SAFE",
+    "company_name": "Safehold Inc.",
+    "sector": "Specialty",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 980.3
+  },
+  {
+    "ticker": "FPI",
+    "company_name": "Farmland Partners Inc",
+    "sector": "Specialty",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 417.6
+  },
+  {
+    "ticker": "LAND",
+    "company_name": "Gladstone Land Corp.",
+    "sector": "Specialty",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 331.1
+  },
+  {
+    "ticker": "PW",
+    "company_name": "Power REIT",
+    "sector": "Specialty",
+    "subsector": null,
+    "reit_type": "Equity",
+    "market_cap_musd": 2.9
+  },
+  {
+    "ticker": "NLY",
+    "company_name": "Annaly Capital Management, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 15272.6
+  },
+  {
+    "ticker": "AGNC",
+    "company_name": "AGNC Investment Corp.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 11499.6
+  },
+  {
+    "ticker": "RITM",
+    "company_name": "Rithm Capital Corp.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 6040.7
+  },
+  {
+    "ticker": "DX",
+    "company_name": "Dynex Capital, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 2057.0
+  },
+  {
+    "ticker": "ARR",
+    "company_name": "ARMOUR Residential REIT, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 1979.5
+  },
+  {
+    "ticker": "EFC",
+    "company_name": "Ellington Financial Inc.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 1356.6
+  },
+  {
+    "ticker": "ORC",
+    "company_name": "Orchid Island Capital, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 1092.3
+  },
+  {
+    "ticker": "TWO",
+    "company_name": "Two Harbors Investment Corp.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 1092.3
+  },
+  {
+    "ticker": "PMT",
+    "company_name": "PennyMac Mortgage Investment Trust",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 1092.0
+  },
+  {
+    "ticker": "CIM",
+    "company_name": "Chimera Investment Corporation",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 1033.6
+  },
+  {
+    "ticker": "MFA",
+    "company_name": "MFA Financial, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 955.7
+  },
+  {
+    "ticker": "RWT",
+    "company_name": "Redwood Trust, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 700.9
+  },
+  {
+    "ticker": "ADAM",
+    "company_name": "Adamas Trust, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 661.1
+  },
+  {
+    "ticker": "IVR",
+    "company_name": "Invesco Mortgage Capital Inc.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 596.7
+  },
+  {
+    "ticker": "MITT",
+    "company_name": "TPG Mortgage Investment Trust, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 270.4
+  },
+  {
+    "ticker": "AOMR",
+    "company_name": "Angel Oak Mortgage REIT, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 204.6
+  },
+  {
+    "ticker": "RPT",
+    "company_name": "Rithm Property Trust Inc",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 125.5
+  },
+  {
+    "ticker": "CHMI",
+    "company_name": "Cherry Hill Mortgage Investment Corp.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 91.9
+  },
+  {
+    "ticker": "LFT",
+    "company_name": "Lument Finance Trust, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 73.8
+  },
+  {
+    "ticker": "LOAN",
+    "company_name": "Manhattan Bridge Capital, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Home Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 53.2
+  },
+  {
+    "ticker": "STWD",
+    "company_name": "Starwood Property Trust, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 6612.2
+  },
+  {
+    "ticker": "BXMT",
+    "company_name": "Blackstone Mortgage Trust, Inc. Class A",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 3208.6
+  },
+  {
+    "ticker": "ABR",
+    "company_name": "Arbor Realty Trust Inc",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 1518.7
+  },
+  {
+    "ticker": "LADR",
+    "company_name": "Ladder Capital Corp. Class A",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 1407.8
+  },
+  {
+    "ticker": "ARI",
+    "company_name": "Apollo Commercial Real Estate Finance, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 1345.0
+  },
+  {
+    "ticker": "FBRT",
+    "company_name": "Franklin BSP Realty Trust, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 824.6
+  },
+  {
+    "ticker": "BRSP",
+    "company_name": "BrightSpire Capital Inc",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 730.6
+  },
+  {
+    "ticker": "TRTX",
+    "company_name": "TPG RE Finance Trust, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 676.7
+  },
+  {
+    "ticker": "KREF",
+    "company_name": "KKR Real Estate Finance Trust, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 538.3
+  },
+  {
+    "ticker": "CMTG",
+    "company_name": "Claros Mortgage Trust, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 426.4
+  },
+  {
+    "ticker": "RC",
+    "company_name": "Ready Capital Corporation",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 358.2
+  },
+  {
+    "ticker": "ACRE",
+    "company_name": "Ares Commercial Real Estate Corporation",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 262.2
+  },
+  {
+    "ticker": "REFI",
+    "company_name": "Chicago Atlantic Real Estate Finance, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 256.2
+  },
+  {
+    "ticker": "NREF",
+    "company_name": "NexPoint Real Estate Finance, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 248.4
+  },
+  {
+    "ticker": "SEVN",
+    "company_name": "Seven Hills Realty Trust",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 201.1
+  },
+  {
+    "ticker": "ACR",
+    "company_name": "ACRES Commercial Realty Corp.",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 157.8
+  },
+  {
+    "ticker": "SUNS",
+    "company_name": "Sunrise Realty Trust, Inc.",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 126.6
+  },
+  {
+    "ticker": "GPMT",
+    "company_name": "Granite Point Mortgage Trust Inc.",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 113.7
+  },
+  {
+    "ticker": "AFCG",
+    "company_name": "Advanced Flower Capital Inc.",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 64.4
+  },
+  {
+    "ticker": "SACH",
+    "company_name": "Sachem Capital Corp.",
+    "sector": "Mortgage",
+    "subsector": "Commercial Financing",
+    "reit_type": "Mortgage",
+    "market_cap_musd": 49.2
+  }
+]

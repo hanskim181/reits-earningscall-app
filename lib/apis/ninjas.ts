@@ -91,7 +91,11 @@ export async function searchTranscriptAvailability(
     });
     logApiCall('/v1/earningstranscriptsearch', { ticker }, res.status);
 
-    const data = res.data as AvailableQuarter[];
+    // Coerce year/quarter from strings to numbers at the API boundary
+    const data: AvailableQuarter[] = (res.data as Array<Record<string, unknown>>).map((q) => ({
+      year: Number(q.year),
+      quarter: Number(q.quarter),
+    }));
     setApiCache('/v1/earningstranscriptsearch', cacheKey, data);
     return { ok: true, data };
   } catch (err: unknown) {

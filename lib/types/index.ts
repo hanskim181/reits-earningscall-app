@@ -22,11 +22,11 @@ export type NinjasTranscriptResponse = {
   transcript_split?: never;  // locked — Claude segments prepared vs Q&A
 };
 
-// Available quarters for a ticker
+// Available quarters for a ticker (from /earningstranscriptsearch)
+// year/quarter are coerced to number in the API wrapper — raw API returns strings
 export type AvailableQuarter = {
   year: number;
   quarter: number;
-  date: string;
 };
 
 // Formatted transcript for display

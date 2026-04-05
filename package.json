@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prewarm": "DOTENV_CONFIG_PATH=.env.local npx tsx scripts/prewarm_cache.ts",
+    "clear-demo": "DOTENV_CONFIG_PATH=.env.local npx tsx scripts/clear_demo.ts",
+    "verify-coverage": "DOTENV_CONFIG_PATH=.env.local npx tsx scripts/verify_coverage.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.82.0",

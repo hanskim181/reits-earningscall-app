@@ -44,3 +44,6 @@ data/cache.db
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+data/cache.db-wal
+data/cache.db-shm
