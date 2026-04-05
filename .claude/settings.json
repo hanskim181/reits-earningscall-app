@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/hanskim/Downloads/**)",
+      "Bash(curl -s -w \"\\\\n\\\\nHTTP_STATUS: %{http_code}\" \"https://api.api-ninjas.com/v1/earningstranscript?ticker=PLD&year=2024&quarter=3\" -H \"X-Api-Key: f9zmjvG4o0x3qX1ZfJlsDaq12zfrSNtdS23APGYy\")",
+      "Bash(curl -s -w \"\\\\n\\\\nHTTP_STATUS: %{http_code}\" \"https://api.api-ninjas.com/v1/earningstranscript?ticker=PLD&year=2024&quarter=1\" -H \"X-Api-Key: f9zmjvG4o0x3qX1ZfJlsDaq12zfrSNtdS23APGYy\")",
+      "Bash(curl -s -w \"\\\\n\\\\nHTTP_STATUS: %{http_code}\" \"https://api.api-ninjas.com/v1/earningstranscript?ticker=SPG&year=2024&quarter=3\" -H \"X-Api-Key: f9zmjvG4o0x3qX1ZfJlsDaq12zfrSNtdS23APGYy\")",
+      "Bash(brew install:*)",
+      "Bash(/opt/homebrew/bin/brew install:*)",
+      "Bash(python3 -c ':*)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias \"@/*\" --eslint --turbopack)"
+    ]
+  }
+}
