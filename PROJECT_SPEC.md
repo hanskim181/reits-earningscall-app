@@ -38,15 +38,16 @@ REIT equity analysts at institutional investors (PGIM, Cohen & Steers, Nuveen) m
 ## 4. Non-Negotiable Principles
 
 1. **Zero mock data.** Every value displayed comes from a real API call. No fabrication — ever.
-2. **Source attribution on every data point.** Every rendered metric carries `{value, source, as_of_date}`. Sources labeled: "API Ninjas (transcript)", "API Ninjas (earnings)", "Yahoo Finance", "Claude enhanced analysis".
+2. **Source attribution on every data point.** Every rendered metric carries `{value, source, as_of_date}`. Sources labeled: "API Ninjas (transcript)", "API Ninjas (earnings)", "Yahoo Finance", "Claude analysis".
 3. **Every AI insight must cite the transcript.** Hovering any Claude-generated insight reveals the exact source sentences.
 4. **Aggressive caching in SQLite.** Transcripts cached indefinitely. Claude outputs cached by prompt hash. For performance AND live-demo reliability.
 5. **Graceful degradation.** Every external call wrapped in try/catch with user-visible error states.
 6. **Secrets in `.env.local`**, never committed, `.env.example` provided.
 7. **AI disclosure footer on every page**: "AI-generated analysis. Informational only, not investment advice. Built for NYU Stern REDS 2026."
 
-## 5. Locked-In Tech Stack
+## 5. Tech Stack and Architecture
 
+### Stack
 - **Frontend**: Next.js 14 (App Router) + TypeScript + Tailwind CSS + shadcn/ui + Recharts + lucide-react + FullCalendar React
 - **Backend**: Next.js API routes (monolith) + better-sqlite3 for caching
 - **AI**: Anthropic SDK (`@anthropic-ai/sdk`) using `claude-sonnet-4-6` as default model
@@ -56,38 +57,64 @@ REIT equity analysts at institutional investors (PGIM, Cohen & Steers, Nuveen) m
 - **Export**: `exceljs` for Excel, `puppeteer` for PDF
 - **Dev environment**: VS Code with Claude Code extension
 
+### Single-Layer Claude Analysis Architecture
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                      RTIP Frontend                       │
+│  Transcript Viewer │ Insights Panel │ Financials │ Cal   │
+└────────┬───────────┴───────┬────────┴─────┬──────┴──┬───┘
+         │                   │              │         │
+    ┌────▼────┐        ┌─────▼─────┐   ┌────▼───┐ ┌──▼──┐
+    │ API     │        │  Claude   │   │ API    │ │Yahoo│
+    │ Ninjas  │───────►│  Analysis │   │ Ninjas │ │Fin. │
+    │ /trans- │ raw    │  Engine   │   │ /earn- │ │OHLC │
+    │  cript  │ text   │           │   │  ings  │ │     │
+    └─────────┘        └───────────┘   └────────┘ └─────┘
+    transcript,         summary,        10-Q/10-K   price
+    date,               guidance,       financials  reaction
+    earnings_timing     risk factors,
+                        participants,
+                        sentiment,
+                        signals, KPIs
+```
+
+**Design rationale**: API Ninjas provides raw transcripts and structured financial data. Claude performs all REIT-specific intelligence. We chose this architecture deliberately because generic summarization is commoditized; the value is in domain-specific REIT analysis that off-the-shelf tools cannot provide. This separation also means every AI-generated insight carries full source attribution back to the transcript — a requirement for institutional credibility.
+
 ## 6. API Ninjas — Developer Tier Endpoints
 
-### 6.1 `/v1/earningstranscript`
-Returns for `ticker + year + quarter`: transcript, participants (structured), summary, guidance, risk_factors, call_time, date, year, quarter, cik.
+> **Phase 0 verified (2026-04-05):** The Developer tier returns raw transcript text and metadata. Premium analysis fields (`participants`, `summary`, `guidance`, `risk_factors`, `overall_sentiment`, `transcript_split`) are locked — not used. All analysis is performed by Claude.
 
-**Architecture**: API Ninjas fields = "Baseline Layer". Claude adds "Enhanced Analysis Layer" — REIT-specific KPI extraction, multi-layer sentiment, signal tagging, cross-quarter delta.
+### 6.1 `/v1/earningstranscript`
+**Developer tier returns:** `transcript` (full text, 50–60K chars), `date`, `timestamp`, `earnings_timing` (before/during/after market), `ticker`, `cik`, `year`, `quarter`.
+
+**Locked on Developer tier — not used:** `participants`, `summary`, `guidance`, `risk_factors`, `overall_sentiment`, `overall_sentiment_rationale`, `transcript_split`.
 
 ### 6.2 `/v1/earningstranscriptsearch`
-Given ticker, returns all available (year, quarter) combinations. Used for quarter picker — shows only existing quarters.
+Given ticker → array of `{year, quarter}` available. **Verified working.** Used for quarter picker.
 
 ### 6.3 `/v1/earningstranscriptlist`
-Returns all companies with transcripts. Used for universe coverage verification.
+Returns all companies with transcripts. **9,312 companies.** 100% FTSE Nareit overlap confirmed.
 
 ### 6.4 `/v1/earnings`
-Detailed earnings from SEC 10-Q/10-K filings. Historical pre-2025 available on Developer tier.
+Returns `company_info`, `income_statement`, `balance_sheet`, `cash_flow`, `filing_info`. **Verified working.** Historical pre-2025 available on Developer tier.
 
 ### 6.5 `/v1/earningscalendar` and `/v1/upcomingearnings`
-Past results and upcoming dates. Supports ticker/date/exchange filters.
+Returns `date`, `ticker`, `actual_eps`, `estimated_eps`, `actual_revenue`, `estimated_revenue`, `earnings_call_timestamp`, `earnings_timing`. **Verified working.**
 
 ### 6.6 `/v1/stockprice`
 Current quote. For header metadata only.
 
 ### 6.7 `/v1/analytics`
-Subscription tier and usage stats. Dev-only.
+Returns 403 on Developer tier. Not usable.
 
 ## 7. Core Features (build order)
 
 1. **REIT Selector** — searchable picker, 195 FTSE Nareit constituents, sector filter, availability-driven quarter picker
 2. **Transcript Viewer** — full text, sentence-level breaks, section headers, speaker attribution, in-page search, click-to-highlight from signals
-3. **Insights Panel — three tabs**:
-   - **Baseline** (API Ninjas): summary, guidance, risk_factors, participants, call_time
-   - **Enhanced** (Claude): REIT-specific KPIs, multi-layer sentiment, signals with citations
+3. **Insights Panel — three tabs** (all Claude-generated, no API Ninjas baseline):
+   - **Summary**: executive summary, key themes, guidance, risk factors, participants, notable quotes — all generated by Claude with sentence-level citations
+   - **Sentiment & Signals**: multi-layer sentiment (overall / section / topic), sector/geography/macro signals with polarity and citations, REIT-specific KPIs (FFO, AFFO, NOI, occupancy, etc.)
    - **Ask**: Claude RAG chat scoped to selected transcript
 4. **Financial Dashboard** — API Ninjas `/earnings` + Claude-extracted KPIs, source attribution, 8-quarter sparklines
 5. **Earnings Calendar** — FullCalendar month view, past + upcoming, sector color-coded
@@ -106,18 +133,19 @@ Script: `/scripts/prewarm_cache.ts`
 
 ## 9. Known Risks
 
-1. FTSE Nareit coverage on API Ninjas unverified → Phase 0 resolves
+1. ~~FTSE Nareit coverage on API Ninjas unverified~~ → **RESOLVED Phase 0: 30/30 (100%) coverage, 9,312 companies total**
 2. REIT-specific KPIs not in `/v1/earnings` → Claude extracts from transcript
 3. Claude JSON reliability → structured output + try/catch + retry
 4. Live demo reliability → pre-warm cache + graceful error states
 5. API key security → `.env.local`, server-side only, never logged/committed
-6. API Ninjas transcript endpoint may not return all documented fields (participants, summary, guidance, risk_factors) → Phase 0 verifies
+6. ~~API Ninjas transcript endpoint may not return all documented fields~~ → **RESOLVED Phase 0: `participants`, `summary`, `guidance`, `risk_factors` are paywalled on Developer tier. Claude generates all analysis. Architecture updated accordingly.**
+7. **Claude is the single point of analysis** — all summary, sentiment, signals, KPIs, participant parsing come from Claude. Prompt quality and JSON reliability are critical. Mitigated by: aggressive caching, structured output, try/catch + retry, pre-warm for demo REITs.
 
 ## 10. Phase Plan
 
 - **Phase 0**: Scaffold, env, API wrappers, SQLite cache, coverage verification. STOP.
 - **Phase 1**: Parse Nareit PDF → CSV, REIT selector + quarter picker + transcript viewer. STOP.
-- **Phase 2**: Baseline insights + Claude enhanced analysis (summary, sentiment, signals, ask). STOP.
+- **Phase 2**: Claude full analysis (summary, guidance, risk factors, participants, sentiment, signals, KPIs, ask). STOP.
 - **Phase 3**: Financial dashboard + earnings calendar + price reaction. STOP.
 - **Phase 4**: Export + Compare Mode + Heatmap + polish + pre-warm + demo prep.
 

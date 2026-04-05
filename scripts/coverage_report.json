@@ -1,0 +1,8276 @@
+{
+  "generated_at": "2026-04-05T14:31:31.274Z",
+  "subscription_tier": "unknown",
+  "current_month_usage": -1,
+  "analytics_raw": null,
+  "endpoints_verified": {
+    "earningstranscriptlist": true,
+    "earningstranscriptsearch": true
+  },
+  "universe_coverage": {
+    "total_tested": 30,
+    "covered": 30,
+    "coverage_rate": 1,
+    "uncovered_tickers": []
+  },
+  "quarter_availability": {
+    "WELL": {
+      "total_quarters": 73,
+      "earliest": "2007-Q4",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2010,
+          "quarter": 3
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "VTR": {
+      "total_quarters": 73,
+      "earliest": "2007-Q4",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2010,
+          "quarter": 3
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "PLD": {
+      "total_quarters": 72,
+      "earliest": "2008-Q1",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2010,
+          "quarter": 3
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "EGP": {
+      "total_quarters": 64,
+      "earliest": "2007-Q4",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "AMT": {
+      "total_quarters": 75,
+      "earliest": "2007-Q2",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 2
+        },
+        {
+          "year": 2007,
+          "quarter": 3
+        },
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2010,
+          "quarter": 3
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "CCI": {
+      "total_quarters": 74,
+      "earliest": "2007-Q2",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 2
+        },
+        {
+          "year": 2007,
+          "quarter": 3
+        },
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2010,
+          "quarter": 3
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "SBAC": {
+      "total_quarters": 67,
+      "earliest": "2007-Q2",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 2
+        },
+        {
+          "year": 2007,
+          "quarter": 3
+        },
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "EQIX": {
+      "total_quarters": 74,
+      "earliest": "2007-Q2",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 2
+        },
+        {
+          "year": 2007,
+          "quarter": 3
+        },
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2010,
+          "quarter": 3
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "DLR": {
+      "total_quarters": 65,
+      "earliest": "2007-Q4",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "SPG": {
+      "total_quarters": 74,
+      "earliest": "2007-Q3",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 3
+        },
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2010,
+          "quarter": 3
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "O": {
+      "total_quarters": 73,
+      "earliest": "2007-Q4",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2010,
+          "quarter": 3
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "KIM": {
+      "total_quarters": 72,
+      "earliest": "2007-Q3",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 3
+        },
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "REG": {
+      "total_quarters": 67,
+      "earliest": "2007-Q4",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "PSA": {
+      "total_quarters": 73,
+      "earliest": "2007-Q3",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 3
+        },
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2010,
+          "quarter": 3
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "EXR": {
+      "total_quarters": 66,
+      "earliest": "2007-Q4",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2010,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "AVB": {
+      "total_quarters": 70,
+      "earliest": "2007-Q4",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "EQR": {
+      "total_quarters": 71,
+      "earliest": "2007-Q3",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 3
+        },
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "INVH": {
+      "total_quarters": 35,
+      "earliest": "2017-Q1",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "SUI": {
+      "total_quarters": 63,
+      "earliest": "2007-Q3",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 3
+        },
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "VICI": {
+      "total_quarters": 32,
+      "earliest": "2018-Q1",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "GLPI": {
+      "total_quarters": 48,
+      "earliest": "2014-Q1",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "IRM": {
+      "total_quarters": 73,
+      "earliest": "2007-Q4",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2010,
+          "quarter": 3
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "WY": {
+      "total_quarters": 74,
+      "earliest": "2007-Q3",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 3
+        },
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2010,
+          "quarter": 3
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "HST": {
+      "total_quarters": 75,
+      "earliest": "2007-Q2",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 2
+        },
+        {
+          "year": 2007,
+          "quarter": 3
+        },
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 2
+        },
+        {
+          "year": 2010,
+          "quarter": 3
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "BXP": {
+      "total_quarters": 71,
+      "earliest": "2007-Q4",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 3
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 1
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2009,
+          "quarter": 3
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2010,
+          "quarter": 1
+        },
+        {
+          "year": 2010,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 1
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "VNO": {
+      "total_quarters": 55,
+      "earliest": "2012-Q2",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "WPC": {
+      "total_quarters": 56,
+      "earliest": "2012-Q1",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "NLY": {
+      "total_quarters": 64,
+      "earliest": "2007-Q4",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2007,
+          "quarter": 4
+        },
+        {
+          "year": 2008,
+          "quarter": 1
+        },
+        {
+          "year": 2008,
+          "quarter": 2
+        },
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "AGNC": {
+      "total_quarters": 61,
+      "earliest": "2008-Q4",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2008,
+          "quarter": 4
+        },
+        {
+          "year": 2009,
+          "quarter": 4
+        },
+        {
+          "year": 2011,
+          "quarter": 2
+        },
+        {
+          "year": 2011,
+          "quarter": 3
+        },
+        {
+          "year": 2011,
+          "quarter": 4
+        },
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    },
+    "STWD": {
+      "total_quarters": 56,
+      "earliest": "2012-Q1",
+      "latest": "2025-Q4",
+      "last_4_covered": true,
+      "available": [
+        {
+          "year": 2012,
+          "quarter": 1
+        },
+        {
+          "year": 2012,
+          "quarter": 2
+        },
+        {
+          "year": 2012,
+          "quarter": 3
+        },
+        {
+          "year": 2012,
+          "quarter": 4
+        },
+        {
+          "year": 2013,
+          "quarter": 1
+        },
+        {
+          "year": 2013,
+          "quarter": 2
+        },
+        {
+          "year": 2013,
+          "quarter": 3
+        },
+        {
+          "year": 2013,
+          "quarter": 4
+        },
+        {
+          "year": 2014,
+          "quarter": 1
+        },
+        {
+          "year": 2014,
+          "quarter": 2
+        },
+        {
+          "year": 2014,
+          "quarter": 3
+        },
+        {
+          "year": 2014,
+          "quarter": 4
+        },
+        {
+          "year": 2015,
+          "quarter": 1
+        },
+        {
+          "year": 2015,
+          "quarter": 2
+        },
+        {
+          "year": 2015,
+          "quarter": 3
+        },
+        {
+          "year": 2015,
+          "quarter": 4
+        },
+        {
+          "year": 2016,
+          "quarter": 1
+        },
+        {
+          "year": 2016,
+          "quarter": 2
+        },
+        {
+          "year": 2016,
+          "quarter": 3
+        },
+        {
+          "year": 2016,
+          "quarter": 4
+        },
+        {
+          "year": 2017,
+          "quarter": 1
+        },
+        {
+          "year": 2017,
+          "quarter": 2
+        },
+        {
+          "year": 2017,
+          "quarter": 3
+        },
+        {
+          "year": 2017,
+          "quarter": 4
+        },
+        {
+          "year": 2018,
+          "quarter": 1
+        },
+        {
+          "year": 2018,
+          "quarter": 2
+        },
+        {
+          "year": 2018,
+          "quarter": 3
+        },
+        {
+          "year": 2018,
+          "quarter": 4
+        },
+        {
+          "year": 2019,
+          "quarter": 1
+        },
+        {
+          "year": 2019,
+          "quarter": 2
+        },
+        {
+          "year": 2019,
+          "quarter": 3
+        },
+        {
+          "year": 2019,
+          "quarter": 4
+        },
+        {
+          "year": 2020,
+          "quarter": 1
+        },
+        {
+          "year": 2020,
+          "quarter": 2
+        },
+        {
+          "year": 2020,
+          "quarter": 3
+        },
+        {
+          "year": 2020,
+          "quarter": 4
+        },
+        {
+          "year": 2021,
+          "quarter": 1
+        },
+        {
+          "year": 2021,
+          "quarter": 2
+        },
+        {
+          "year": 2021,
+          "quarter": 3
+        },
+        {
+          "year": 2021,
+          "quarter": 4
+        },
+        {
+          "year": 2022,
+          "quarter": 1
+        },
+        {
+          "year": 2022,
+          "quarter": 2
+        },
+        {
+          "year": 2022,
+          "quarter": 3
+        },
+        {
+          "year": 2022,
+          "quarter": 4
+        },
+        {
+          "year": 2023,
+          "quarter": 1
+        },
+        {
+          "year": 2023,
+          "quarter": 2
+        },
+        {
+          "year": 2023,
+          "quarter": 3
+        },
+        {
+          "year": 2023,
+          "quarter": 4
+        },
+        {
+          "year": 2024,
+          "quarter": 1
+        },
+        {
+          "year": 2024,
+          "quarter": 2
+        },
+        {
+          "year": 2024,
+          "quarter": 3
+        },
+        {
+          "year": 2024,
+          "quarter": 4
+        },
+        {
+          "year": 2025,
+          "quarter": 1
+        },
+        {
+          "year": 2025,
+          "quarter": 2
+        },
+        {
+          "year": 2025,
+          "quarter": 3
+        },
+        {
+          "year": 2025,
+          "quarter": 4
+        }
+      ]
+    }
+  },
+  "last_4_quarters_coverage": {
+    "total_with_last_4": 30,
+    "out_of": 30
+  },
+  "schema_verification": {
+    "transcript_endpoint": {
+      "WELL_Q3_2025": {
+        "fetched_quarter": "Q3 2025",
+        "fields_present": [
+          "date",
+          "timestamp",
+          "earnings_timing",
+          "ticker",
+          "cik",
+          "year",
+          "quarter",
+          "transcript",
+          "summary",
+          "guidance",
+          "risk_factors",
+          "overall_sentiment",
+          "overall_sentiment_rationale",
+          "participants",
+          "transcript_split"
+        ],
+        "transcript_length": 60024,
+        "has_participants": false,
+        "participants_count": 0,
+        "has_summary": true,
+        "summary_length": 132,
+        "has_guidance": true,
+        "guidance_length": 132,
+        "has_risk_factors": true,
+        "risk_factors_length": 132,
+        "call_time": "before_market",
+        "date": "2025-10-28"
+      },
+      "PLD_Q3_2025": {
+        "fetched_quarter": "Q3 2025",
+        "fields_present": [
+          "date",
+          "timestamp",
+          "earnings_timing",
+          "ticker",
+          "cik",
+          "year",
+          "quarter",
+          "transcript",
+          "summary",
+          "guidance",
+          "risk_factors",
+          "overall_sentiment",
+          "overall_sentiment_rationale",
+          "participants",
+          "transcript_split"
+        ],
+        "transcript_length": 51550,
+        "has_participants": false,
+        "participants_count": 0,
+        "has_summary": true,
+        "summary_length": 132,
+        "has_guidance": true,
+        "guidance_length": 132,
+        "has_risk_factors": true,
+        "risk_factors_length": 132,
+        "call_time": "during_market",
+        "date": "2025-10-15"
+      },
+      "AMT_Q3_2025": {
+        "fetched_quarter": "Q3 2025",
+        "fields_present": [
+          "date",
+          "timestamp",
+          "earnings_timing",
+          "ticker",
+          "cik",
+          "year",
+          "quarter",
+          "transcript",
+          "summary",
+          "guidance",
+          "risk_factors",
+          "overall_sentiment",
+          "overall_sentiment_rationale",
+          "participants",
+          "transcript_split"
+        ],
+        "transcript_length": 54375,
+        "has_participants": false,
+        "participants_count": 0,
+        "has_summary": true,
+        "summary_length": 132,
+        "has_guidance": true,
+        "guidance_length": 132,
+        "has_risk_factors": true,
+        "risk_factors_length": 132,
+        "call_time": "before_market",
+        "date": "2025-10-28"
+      }
+    },
+    "earnings_endpoint": {
+      "WELL": {
+        "fields": [
+          "company_info",
+          "income_statement",
+          "balance_sheet",
+          "cash_flow",
+          "filing_info"
+        ],
+        "is_array": false,
+        "count": 1,
+        "sample": "{\"company_info\":{\"ticker\":\"WELL\",\"cik\":\"766704\",\"fiscal_year\":2025,\"company_name\":\"WELLTOWER INC.\",\"fiscal_quarter\":2},\"income_statement\":{\"earnings_per_share_basic\":0.45999999999999996,\"interest_expense\":141157000,\"sales_and_marketing\":null,\"operating_income\":298213000,\"tax_provision\":-9985000,\"gross_profit\":1033533000,\"earnings_per_share_diluted\":0.44999999999999996,\"weighted_average_shares_basic\":6636000,\"general_and_administrative\":64175000,\"cost_of_revenue\":1514711000,\"stock_based_compensat"
+      },
+      "PLD": {
+        "fields": [
+          "company_info",
+          "income_statement",
+          "balance_sheet",
+          "cash_flow",
+          "filing_info"
+        ],
+        "is_array": false,
+        "count": 1,
+        "sample": "{\"company_info\":{\"ticker\":\"PLD\",\"cik\":\"1045609\",\"fiscal_year\":2025,\"company_name\":\"Prologis, Inc.\",\"fiscal_quarter\":2},\"income_statement\":{\"earnings_per_share_basic\":0.61,\"interest_expense\":715368000,\"sales_and_marketing\":null,\"operating_income\":912712000,\"tax_provision\":110171000,\"gross_profit\":null,\"earnings_per_share_diluted\":0.62,\"weighted_average_shares_basic\":571000,\"general_and_administrative\":336273000,\"cost_of_revenue\":null,\"stock_based_compensation\":43984000,\"total_revenue\":2183869000,"
+      },
+      "AMT": {
+        "fields": [
+          "company_info",
+          "income_statement",
+          "balance_sheet",
+          "cash_flow",
+          "filing_info"
+        ],
+        "is_array": false,
+        "count": 1,
+        "sample": "{\"company_info\":{\"ticker\":\"AMT\",\"cik\":\"1053507\",\"fiscal_year\":2025,\"company_name\":\"AMERICAN TOWER CORP /MA/\",\"fiscal_quarter\":2},\"income_statement\":{\"earnings_per_share_basic\":0.78,\"interest_expense\":993200000,\"sales_and_marketing\":null,\"operating_income\":1197700000,\"tax_provision\":369100000,\"gross_profit\":null,\"earnings_per_share_diluted\":0.79,\"weighted_average_shares_basic\":269000,\"general_and_administrative\":null,\"cost_of_revenue\":null,\"stock_based_compensation\":47300000,\"total_revenue\":26269"
+      }
+    },
+    "calendar_endpoint": {
+      "success": true,
+      "count": 5,
+      "sample": "[{\"date\":\"2026-02-10\",\"ticker\":\"WELL\",\"actual_eps\":1.13,\"estimated_eps\":0.59,\"actual_revenue\":3181011000,\"estimated_revenue\":2857989000,\"earnings_call_timestamp\":null,\"earnings_timing\":null},{\"date\":\"2025-10-27\",\"ticker\":\"WELL\",\"actual_eps\":1.34,\"estimated_eps\":1.3,\"actual_revenue\":2685692000,\"estimated_revenue\":2958181380,\"earnings_call_timestamp\":1761656400,\"earnings_timing\":\"before_market\"},{\"date\":\"2025-07-28\",\"ticker\":\"WELL\",\"actual_eps\":1.28,\"estimated_eps\":1.22,\"actual_revenue\":2516141000",
+      "fields": [
+        "date",
+        "ticker",
+        "actual_eps",
+        "estimated_eps",
+        "actual_revenue",
+        "estimated_revenue",
+        "earnings_call_timestamp",
+        "earnings_timing"
+      ]
+    }
+  }
+}
