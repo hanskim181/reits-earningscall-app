@@ -96,10 +96,33 @@ export default function CalendarPage() {
   };
 
   const handleEventClick = (ev: CalendarEvent) => {
+    // Earnings calls report PRIOR quarter results.
+    // Map the announcement date to the fiscal quarter being reported:
+    //   Jan-Feb announcement → Q4 of prior year
+    //   Mar-May announcement → Q1 of same year
+    //   Jun-Aug announcement → Q2 of same year
+    //   Sep-Nov announcement → Q3 of same year
+    //   Dec announcement     → Q4 of same year (rare)
     const d = new Date(ev.date);
-    const q = Math.ceil((d.getMonth() + 1) / 3);
-    const y = d.getFullYear();
-    router.push(`/analysis/${ev.ticker}/${y}/${q}`);
+    const month = d.getMonth() + 1; // 1-12
+    let reportYear = d.getFullYear();
+    let reportQuarter: number;
+
+    if (month <= 2) {
+      // Jan-Feb → reporting Q4 of prior year
+      reportQuarter = 4;
+      reportYear -= 1;
+    } else if (month <= 5) {
+      reportQuarter = 1;
+    } else if (month <= 8) {
+      reportQuarter = 2;
+    } else if (month <= 11) {
+      reportQuarter = 3;
+    } else {
+      reportQuarter = 4;
+    }
+
+    router.push(`/analysis/${ev.ticker}/${reportYear}/${reportQuarter}`);
   };
 
   const monthLabel = new Date(yearNum, monthNum - 1).toLocaleDateString('en-US', {
