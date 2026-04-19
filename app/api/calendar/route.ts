@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { fetchEarningsCalendar, fetchUpcomingEarnings } from '@/lib/apis/ninjas';
+import { fetchEarningsCalendar } from '@/lib/apis/ninjas';
+import { fetchUpcomingEarningsBatch } from '@/lib/apis/yahoo';
 import { getREITUniverse } from '@/lib/universe/loader';
 import type { REIT } from '@/lib/types';
 
@@ -27,18 +28,6 @@ interface RawCalendarEntry {
   [key: string]: unknown;
 }
 
-interface RawUpcomingEntry {
-  ticker?: string;
-  name?: string;
-  pricedate?: string;
-  earnings_date?: string;
-  date?: string;
-  earnings_timing?: string;
-  actual_eps?: number;
-  estimated_eps?: number;
-  [key: string]: unknown;
-}
-
 // --- Helpers ---
 
 function buildUniverseMap(reits: REIT[]): Map<string, REIT> {
@@ -49,7 +38,7 @@ function buildUniverseMap(reits: REIT[]): Map<string, REIT> {
   return map;
 }
 
-function extractDate(entry: RawCalendarEntry | RawUpcomingEntry): string {
+function extractDate(entry: RawCalendarEntry): string {
   return (entry.pricedate ?? entry.earnings_date ?? entry.date ?? '') as string;
 }
 
@@ -97,72 +86,39 @@ async function handlePast(universe: REIT[], universeMap: Map<string, REIT>): Pro
 }
 
 async function handleUpcoming(universe: REIT[], universeMap: Map<string, REIT>): Promise<CalendarEvent[]> {
-  // Strategy: fetch earningscalendar for top 50 REITs and find dates in the future
+  // Use Yahoo Finance calendarEvents for upcoming earnings dates.
+  // Fetch top 50 REITs by market cap for broad coverage.
+  const top50 = universe.slice(0, 50);
+  const tickers = top50.map((r) => r.ticker);
+
+  const yahooResults = await fetchUpcomingEarningsBatch(tickers);
+
   const today = new Date().toISOString().slice(0, 10);
-  const top50upcoming = universe.slice(0, 50);
-
-  const results = await Promise.allSettled(
-    top50upcoming.map((reit) => fetchEarningsCalendar(reit.ticker, false, 2))
-  );
-
   const events: CalendarEvent[] = [];
 
-  for (let i = 0; i < results.length; i++) {
-    const settled = results[i];
-    const reitItem = top50upcoming[i];
+  for (const result of yahooResults) {
+    // Only include future dates
+    if (result.earnings_date <= today) continue;
 
-    if (settled.status !== 'fulfilled' || !settled.value.ok) continue;
+    const reit = universeMap.get(result.ticker);
+    if (!reit) continue;
 
-    const entries = settled.value.data as RawCalendarEntry[];
-    if (!Array.isArray(entries)) continue;
+    // Map Yahoo's BMO/AMC to earnings_timing format
+    let earningsTiming: string | null = null;
+    if (result.earnings_time === 'BMO') earningsTiming = 'before_market';
+    else if (result.earnings_time === 'AMC') earningsTiming = 'after_market';
 
-    for (const entry of entries) {
-      const date = extractDate(entry);
-      if (!date || date <= today) continue; // only future dates
-
-      events.push({
-        ticker: reitItem.ticker,
-        company_name: reitItem.company_name,
-        sector: reitItem.sector,
-        date,
-        earnings_timing: entry.earnings_timing ?? null,
-        actual_eps: entry.actual_eps ?? null,
-        estimated_eps: entry.estimated_eps ?? null,
-        source: 'API Ninjas (calendar)',
-      });
-    }
+    events.push({
+      ticker: reit.ticker,
+      company_name: reit.company_name,
+      sector: reit.sector,
+      date: result.earnings_date,
+      earnings_timing: earningsTiming,
+      actual_eps: null, // upcoming — no actuals yet
+      estimated_eps: result.eps_estimate_avg,
+      source: 'API Ninjas (calendar)', // keep consistent label
+    });
   }
-
-  // Also try the upcomingearnings endpoint as supplementary data
-  try {
-    const result = await fetchUpcomingEarnings({ limit: 100 });
-    if (result.ok) {
-      const entries = result.data as RawUpcomingEntry[];
-      if (Array.isArray(entries)) {
-        for (const entry of entries) {
-          const entryTicker = (entry.ticker ?? '') as string;
-          if (!entryTicker) continue;
-          const reit = universeMap.get(entryTicker.toUpperCase());
-          if (!reit) continue;
-          const date = extractDate(entry);
-          if (!date) continue;
-          // Avoid duplicates
-          if (!events.some((e) => e.ticker === reit.ticker && e.date === date)) {
-            events.push({
-              ticker: reit.ticker,
-              company_name: reit.company_name,
-              sector: reit.sector,
-              date,
-              earnings_timing: entry.earnings_timing ?? null,
-              actual_eps: entry.actual_eps ?? null,
-              estimated_eps: entry.estimated_eps ?? null,
-              source: 'API Ninjas (calendar)',
-            });
-          }
-        }
-      }
-    }
-  } catch { /* supplementary — ignore failures */ }
 
   events.sort((a, b) => a.date.localeCompare(b.date));
   return events;

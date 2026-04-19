@@ -2,7 +2,7 @@ import YahooFinance from 'yahoo-finance2';
 import { getApiCache, setApiCache } from '@/lib/cache/sqlite';
 import type { EarningsTiming } from '@/lib/types';
 
-const yf = new YahooFinance({ suppressNotices: ['ripHistorical'] });
+const yf = new YahooFinance({ suppressNotices: ['ripHistorical', 'yahooSurvey'] });
 
 export type OHLC = {
   date: string;
@@ -188,4 +188,89 @@ export async function fetchPriceReaction(
     chart_series,
     source: 'Yahoo Finance',
   };
+}
+
+// --- Upcoming Earnings Dates via Yahoo Finance ---
+
+export type UpcomingEarningsEvent = {
+  ticker: string;
+  earnings_date: string;       // YYYY-MM-DD
+  earnings_time: string;       // 'BMO' | 'AMC' | 'TBD' derived from timestamp hour
+  eps_estimate_avg: number | null;
+  eps_estimate_low: number | null;
+  eps_estimate_high: number | null;
+  source: 'Yahoo Finance';
+};
+
+export async function fetchUpcomingEarningsDate(ticker: string): Promise<UpcomingEarningsEvent | null> {
+  // Check cache (1-hour TTL for upcoming dates since they can shift)
+  const cacheKey = JSON.stringify({ ticker, type: 'upcoming_earnings' });
+  const cached = getApiCache('yahoo_upcoming_earnings', cacheKey);
+  if (cached) {
+    console.log(`[yahoo] CACHE_HIT upcoming earnings ${ticker}`);
+    return cached as UpcomingEarningsEvent;
+  }
+
+  try {
+    const quote = await yf.quoteSummary(ticker, { modules: ['calendarEvents'] });
+    const cal = quote.calendarEvents;
+
+    if (!cal?.earnings?.earningsDate || cal.earnings.earningsDate.length === 0) {
+      return null;
+    }
+
+    const rawDate = cal.earnings.earningsDate[0];
+    const dateObj = new Date(rawDate as unknown as string);
+    const dateStr = dateObj.toISOString().split('T')[0];
+    const hour = dateObj.getUTCHours();
+
+    // Derive timing from the UTC hour
+    // Before ~14:00 UTC → BMO (before US market open)
+    // After ~20:00 UTC → AMC (after US market close)
+    let earningsTime = 'TBD';
+    if (hour <= 14) earningsTime = 'BMO';
+    else if (hour >= 20) earningsTime = 'AMC';
+
+    const result: UpcomingEarningsEvent = {
+      ticker,
+      earnings_date: dateStr,
+      earnings_time: earningsTime,
+      eps_estimate_avg: cal.earnings.earningsAverage ?? null,
+      eps_estimate_low: cal.earnings.earningsLow ?? null,
+      eps_estimate_high: cal.earnings.earningsHigh ?? null,
+      source: 'Yahoo Finance',
+    };
+
+    setApiCache('yahoo_upcoming_earnings', cacheKey, result);
+    console.log(`[yahoo] Fetched upcoming earnings ${ticker}: ${dateStr} (${earningsTime})`);
+    return result;
+  } catch (e) {
+    console.error(`[yahoo] Error fetching upcoming earnings for ${ticker}:`, e instanceof Error ? e.message : e);
+    return null;
+  }
+}
+
+export async function fetchUpcomingEarningsBatch(
+  tickers: string[]
+): Promise<UpcomingEarningsEvent[]> {
+  // Process in batches of 10 to avoid overwhelming Yahoo
+  const batchSize = 10;
+  const results: UpcomingEarningsEvent[] = [];
+
+  for (let i = 0; i < tickers.length; i += batchSize) {
+    const batch = tickers.slice(i, i + batchSize);
+    const batchResults = await Promise.allSettled(
+      batch.map((ticker) => fetchUpcomingEarningsDate(ticker))
+    );
+
+    for (const settled of batchResults) {
+      if (settled.status === 'fulfilled' && settled.value) {
+        results.push(settled.value);
+      }
+    }
+  }
+
+  // Sort by date ascending
+  results.sort((a, b) => a.earnings_date.localeCompare(b.earnings_date));
+  return results;
 }

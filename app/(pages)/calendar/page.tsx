@@ -228,11 +228,15 @@ export default function CalendarPage() {
                         {ev.sector}
                       </Badge>
                       <span className="text-xs text-zinc-500 font-mono w-20 text-right">{ev.date}</span>
-                      {ev.actual_eps !== null && (
+                      {ev.actual_eps !== null ? (
                         <span className="text-xs font-mono text-zinc-300 w-16 text-right">
                           ${ev.actual_eps.toFixed(2)}
                         </span>
-                      )}
+                      ) : ev.estimated_eps !== null ? (
+                        <span className="text-xs font-mono text-zinc-500 w-16 text-right" title="EPS Estimate">
+                          ~${ev.estimated_eps.toFixed(2)}
+                        </span>
+                      ) : null}
                     </button>
                   );
                 })}
