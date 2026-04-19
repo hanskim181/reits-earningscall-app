@@ -329,6 +329,11 @@ function CompareColumn({ entry, onRemove, colIdx, year, quarter }: { entry: Comp
               <span className="font-mono text-zinc-200">{a.baseline.participants.length}</span>
             </div>
           </div>
+          <div className="mt-2 space-y-0.5 text-[9px] text-zinc-600">
+            <p>Guidance — forward-looking metrics mentioned with specific values (e.g., FFO raised to $5.30)</p>
+            <p>Risks — risk factors cited by management or raised by analysts during Q&A</p>
+            <p>People — total call participants (executives, sell-side analysts, operator)</p>
+          </div>
         </Section>
       )}
     </Card>
