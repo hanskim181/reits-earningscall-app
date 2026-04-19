@@ -11,12 +11,17 @@ const QA_TRANSITION_PATTERNS = [
   /open\s+the\s+floor\s+for\s+questions/i,
   /begin\s+the\s+question[- ]and[- ]answer/i,
   /begin\s+the\s+q\s*&\s*a/i,
+  /before\s+we\s+start\s+q\s*&?\s*a/i,
   /first\s+question\s+comes\s+from/i,
   /first\s+question\s+is\s+from/i,
-  /first\s+question\s+today/i,
+  /first\s+question\s+today\s+comes/i,
+  /first\s+question\s+today\s+is/i,
+  /our\s+first\s+question\s+is/i,
+  /our\s+first\s+question\s+comes/i,
   /take\s+our\s+first\s+question/i,
   /proceed\s+to\s+the\s+question/i,
   /at\s+this\s+time.*questions/i,
+  /\[operator\s+instructions\].*first\s+question/i,
 ];
 
 // These patterns should NOT trigger Q&A detection (future tense mentions)

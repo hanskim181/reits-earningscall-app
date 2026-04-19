@@ -63,7 +63,7 @@ export async function fetchTranscript(
       if (status === 401) {
         throw new Error('API Ninjas: Invalid API key (401)');
       }
-      if (status === 404) {
+      if (status === 404 || status === 502) {
         return { ok: false, error: 'not_found', status: 404 };
       }
       return { ok: false, error: 'api_error', status };
