@@ -147,13 +147,14 @@ export default function AnalysisPage() {
 
   // Fetch prices once we have transcript (need date + earnings_timing)
   useEffect(() => {
-    if (!rawTranscript?.date || !rawTranscript?.earnings_timing) return;
+    if (!rawTranscript?.date) return;
+    const timing = rawTranscript.earnings_timing || 'before_market';
     let cancelled = false;
     (async () => {
       setPricesLoading(true);
       setPricesError(null);
       try {
-        const url = `/api/prices?ticker=${ticker}&date=${rawTranscript.date}&earnings_timing=${rawTranscript.earnings_timing}`;
+        const url = `/api/prices?ticker=${ticker}&date=${rawTranscript.date}&earnings_timing=${timing}`;
         const res = await fetch(url);
         if (cancelled) return;
         if (res.ok) {
