@@ -263,32 +263,52 @@ function CompareColumn({ entry, onRemove, colIdx, year, quarter }: { entry: Comp
         ))}
       </Section>
 
-      {/* Signal breakdown */}
-      <Section title="Signals">
+      {/* Signal breakdown with preview */}
+      <Section title={`Signals (${signals.length})`}>
+        {/* Summary counts */}
+        <div className="flex gap-2 text-xs mb-3">
+          <span className="text-emerald-400">{signals.filter((s) => s.polarity === 'positive').length} positive</span>
+          <span className="text-red-400">{signals.filter((s) => s.polarity === 'negative').length} negative</span>
+          <span className="text-zinc-400">{signals.filter((s) => s.polarity === 'neutral').length} neutral</span>
+        </div>
+
+        {/* Positive signals preview */}
+        {signals.filter((s) => s.polarity === 'positive').length > 0 && (
+          <SignalPreviewGroup
+            label="Positive"
+            color="text-emerald-400"
+            barColor="bg-emerald-500"
+            signals={signals.filter((s) => s.polarity === 'positive').sort((a, b) => b.confidence - a.confidence).slice(0, 3)}
+          />
+        )}
+
+        {/* Negative signals preview */}
+        {signals.filter((s) => s.polarity === 'negative').length > 0 && (
+          <SignalPreviewGroup
+            label="Negative"
+            color="text-red-400"
+            barColor="bg-red-500"
+            signals={signals.filter((s) => s.polarity === 'negative').sort((a, b) => b.confidence - a.confidence).slice(0, 3)}
+          />
+        )}
+
+        {/* Neutral signals preview */}
+        {signals.filter((s) => s.polarity === 'neutral').length > 0 && (
+          <SignalPreviewGroup
+            label="Neutral"
+            color="text-zinc-400"
+            barColor="bg-zinc-500"
+            signals={signals.filter((s) => s.polarity === 'neutral').sort((a, b) => b.confidence - a.confidence).slice(0, 2)}
+          />
+        )}
+
+        {/* Link to full analysis */}
         <Link
           href={`/analysis/${entry.ticker}/${year}/${quarter}`}
-          className="block hover:bg-zinc-800/50 rounded-md p-2 -mx-2 transition-colors group"
+          className="flex items-center gap-1 mt-3 text-[10px] text-blue-400 hover:text-blue-300 transition-colors"
         >
-          <div className="flex gap-2 text-xs">
-            <span className="text-emerald-400">{signals.filter((s) => s.polarity === 'positive').length} positive</span>
-            <span className="text-red-400">{signals.filter((s) => s.polarity === 'negative').length} negative</span>
-            <span className="text-zinc-400">{signals.filter((s) => s.polarity === 'neutral').length} neutral</span>
-          </div>
-          <div className="flex gap-1 mt-1.5 text-[10px]">
-            <Badge variant="outline" className="border-zinc-700">
-              Sector: {signals.filter((s) => s.category === 'Sector').length}
-            </Badge>
-            <Badge variant="outline" className="border-zinc-700">
-              Geo: {signals.filter((s) => s.category === 'Geography').length}
-            </Badge>
-            <Badge variant="outline" className="border-zinc-700">
-              Macro: {signals.filter((s) => s.category === 'Macro').length}
-            </Badge>
-          </div>
-          <div className="flex items-center gap-1 mt-2 text-[10px] text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
-            <ExternalLink className="h-3 w-3" />
-            View full signal analysis
-          </div>
+          <ExternalLink className="h-3 w-3" />
+          View all {signals.length} signals in detail
         </Link>
       </Section>
 
@@ -331,6 +351,38 @@ function KpiRow({ label, value, context }: { label: string; value?: string; cont
       <div className="text-right">
         <span className="text-sm font-mono text-zinc-100">{value ?? '—'}</span>
         {context && <span className="text-[10px] text-zinc-600 ml-1">{context.slice(0, 25)}</span>}
+      </div>
+    </div>
+  );
+}
+
+function SignalPreviewGroup({
+  label,
+  color,
+  barColor,
+  signals,
+}: {
+  label: string;
+  color: string;
+  barColor: string;
+  signals: Array<{ sentence: string; tag: string; confidence: number; speaker: string }>;
+}) {
+  return (
+    <div className="mb-2.5">
+      <p className={`text-[10px] font-semibold ${color} mb-1`}>{label}</p>
+      <div className="space-y-1">
+        {signals.map((s, i) => (
+          <div key={i} className="flex gap-1.5 items-start">
+            <div className={`w-0.5 min-h-[16px] rounded-full flex-shrink-0 mt-0.5 ${barColor}`} />
+            <div className="min-w-0">
+              <p className="text-[11px] text-zinc-300 line-clamp-2 leading-tight">{s.sentence}</p>
+              <div className="flex items-center gap-1.5 mt-0.5">
+                <Badge variant="outline" className="text-[9px] border-zinc-700 px-1 py-0">{s.tag}</Badge>
+                <span className="text-[9px] text-zinc-600">{s.speaker}</span>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
