@@ -17,7 +17,8 @@ import { Badge } from '@/components/ui/badge';
 import { Card } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Skeleton } from '@/components/ui/skeleton';
-import { Search, Plus, X, Loader2 } from 'lucide-react';
+import { Search, Plus, X, Loader2, ExternalLink } from 'lucide-react';
+import Link from 'next/link';
 
 type AnalysisResult = {
   baseline: ClaudeBaselineAnalysis | null;
@@ -154,7 +155,7 @@ export default function ComparePage() {
         ) : (
           <div className={`grid gap-4 ${entries.length === 2 ? 'grid-cols-2' : entries.length === 3 ? 'grid-cols-3' : 'grid-cols-1 max-w-lg mx-auto'}`}>
             {entries.map((entry, colIdx) => (
-              <CompareColumn key={entry.ticker} entry={entry} onRemove={removeReit} colIdx={colIdx} />
+              <CompareColumn key={entry.ticker} entry={entry} onRemove={removeReit} colIdx={colIdx} year={year} quarter={quarter} />
             ))}
           </div>
         )}
@@ -165,7 +166,7 @@ export default function ComparePage() {
   );
 }
 
-function CompareColumn({ entry, onRemove, colIdx }: { entry: CompareEntry; onRemove: (t: string) => void; colIdx: number }) {
+function CompareColumn({ entry, onRemove, colIdx, year, quarter }: { entry: CompareEntry; onRemove: (t: string) => void; colIdx: number; year: number; quarter: number }) {
   const colors = getSectorColor(entry.reit.sector);
   const a = entry.analysis;
   const bg = colIdx % 2 === 0 ? 'bg-zinc-900' : 'bg-zinc-900/60';
@@ -264,22 +265,31 @@ function CompareColumn({ entry, onRemove, colIdx }: { entry: CompareEntry; onRem
 
       {/* Signal breakdown */}
       <Section title="Signals">
-        <div className="flex gap-2 text-xs">
-          <span className="text-emerald-400">{signals.filter((s) => s.polarity === 'positive').length} positive</span>
-          <span className="text-red-400">{signals.filter((s) => s.polarity === 'negative').length} negative</span>
-          <span className="text-zinc-400">{signals.filter((s) => s.polarity === 'neutral').length} neutral</span>
-        </div>
-        <div className="flex gap-1 mt-1.5 text-[10px]">
-          <Badge variant="outline" className="border-zinc-700">
-            Sector: {signals.filter((s) => s.category === 'Sector').length}
-          </Badge>
-          <Badge variant="outline" className="border-zinc-700">
-            Geo: {signals.filter((s) => s.category === 'Geography').length}
-          </Badge>
-          <Badge variant="outline" className="border-zinc-700">
-            Macro: {signals.filter((s) => s.category === 'Macro').length}
-          </Badge>
-        </div>
+        <Link
+          href={`/analysis/${entry.ticker}/${year}/${quarter}`}
+          className="block hover:bg-zinc-800/50 rounded-md p-2 -mx-2 transition-colors group"
+        >
+          <div className="flex gap-2 text-xs">
+            <span className="text-emerald-400">{signals.filter((s) => s.polarity === 'positive').length} positive</span>
+            <span className="text-red-400">{signals.filter((s) => s.polarity === 'negative').length} negative</span>
+            <span className="text-zinc-400">{signals.filter((s) => s.polarity === 'neutral').length} neutral</span>
+          </div>
+          <div className="flex gap-1 mt-1.5 text-[10px]">
+            <Badge variant="outline" className="border-zinc-700">
+              Sector: {signals.filter((s) => s.category === 'Sector').length}
+            </Badge>
+            <Badge variant="outline" className="border-zinc-700">
+              Geo: {signals.filter((s) => s.category === 'Geography').length}
+            </Badge>
+            <Badge variant="outline" className="border-zinc-700">
+              Macro: {signals.filter((s) => s.category === 'Macro').length}
+            </Badge>
+          </div>
+          <div className="flex items-center gap-1 mt-2 text-[10px] text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
+            <ExternalLink className="h-3 w-3" />
+            View full signal analysis
+          </div>
+        </Link>
       </Section>
 
       {/* Guidance count */}
