@@ -21,9 +21,12 @@ interface EarningsData {
     [key: string]: unknown;
   };
   balance_sheet: {
-    total_debt: number;
-    cash_and_equivalents: number;
-    total_assets: number;
+    total_debt: number | null;
+    long_term_debt: number | null;
+    total_liabilities: number | null;
+    cash_and_equivalents: number | null;
+    total_assets: number | null;
+    stockholders_equity: number | null;
     [key: string]: unknown;
   };
   cash_flow: {
@@ -189,7 +192,12 @@ export async function GET(req: NextRequest) {
         revenue: sourced(current.income_statement?.total_revenue ?? null, apiSource, periodEndDate),
         net_income: sourced(current.income_statement?.net_income ?? null, apiSource, periodEndDate),
         eps: sourced(current.income_statement?.earnings_per_share_diluted ?? null, apiSource, periodEndDate),
-        total_debt: sourced(current.balance_sheet?.total_debt ?? null, apiSource, periodEndDate),
+        total_debt: sourced(
+          current.balance_sheet?.total_debt
+            ?? current.balance_sheet?.long_term_debt
+            ?? null,
+          apiSource, periodEndDate
+        ),
         cash: sourced(current.balance_sheet?.cash_and_equivalents ?? null, apiSource, periodEndDate),
         operating_cash_flow: sourced(current.cash_flow?.operating_cash_flow ?? null, apiSource, periodEndDate),
         ffo_per_share: ffoPerShare,

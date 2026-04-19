@@ -74,7 +74,7 @@ export function FinancialDashboard({ data, loading, error }: Props) {
     { label: 'Revenue', value: formatNum(cq.revenue.value, '$'), source: cq.revenue.source },
     { label: 'Net Income', value: formatNum(cq.net_income.value, '$'), source: cq.net_income.source },
     { label: 'EPS (Diluted)', value: formatNum(cq.eps.value, '$'), source: cq.eps.source },
-    { label: 'Total Debt', value: formatNum(cq.total_debt.value, '$'), source: cq.total_debt.source },
+    { label: 'Debt', value: formatNum(cq.total_debt.value, '$'), source: cq.total_debt.source },
     { label: 'Cash', value: formatNum(cq.cash.value, '$'), source: cq.cash.source },
     { label: 'Op. Cash Flow', value: formatNum(cq.operating_cash_flow.value, '$'), source: cq.operating_cash_flow.source },
   ];
