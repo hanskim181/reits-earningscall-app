@@ -2,6 +2,8 @@
 
 **NYU Stern — REDS 2026 | Rapid AI Prototyping Assignment | Written Report**
 
+**Team:** Rachael Romero · Hans Kim · Lavanya Garg · Matthew Zhou
+
 **Live prototype:** https://reits-earningscall-app-production.up.railway.app
 **Repository:** https://github.com/hanskim181/reits-earningscall-app
 
@@ -58,7 +60,7 @@ We evaluated eight platforms against six criteria: AI capability depth, UI flexi
 
 ### Why Next.js + Claude Code
 
-We selected a full-stack **Next.js 14 (App Router) with TypeScript** on the front end, paired with **Claude Code in VS Code** as the agentic development environment. The core reasoning:
+We selected a full-stack **Next.js 16 (App Router) with TypeScript** on the front end, paired with **Claude Code in VS Code** as the agentic development environment. The core reasoning:
 
 1. **Institutional-grade UI**: the judge is a senior PGIM executive. Our visual references were Bloomberg Terminal, PitchBook, and Koyfin — these cannot be replicated in Streamlit or Lovable.
 2. **Parallel AI orchestration**: each REIT requires five distinct Claude calls (baseline synthesis, structured summary, multi-layer sentiment, signal extraction, KPI extraction). Next.js API routes with `Promise.allSettled` handle this cleanly.

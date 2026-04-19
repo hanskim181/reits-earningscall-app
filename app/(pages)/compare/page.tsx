@@ -265,12 +265,15 @@ function CompareColumn({ entry, onRemove, colIdx, year, quarter }: { entry: Comp
 
       {/* Signal breakdown with preview */}
       <Section title={`Signals (${signals.length})`}>
-        {/* Summary counts */}
-        <div className="flex gap-2 text-xs mb-3">
+        {/* Polarity summary */}
+        <div className="flex gap-2 text-xs mb-2">
           <span className="text-emerald-400">{signals.filter((s) => s.polarity === 'positive').length} positive</span>
           <span className="text-red-400">{signals.filter((s) => s.polarity === 'negative').length} negative</span>
           <span className="text-zinc-400">{signals.filter((s) => s.polarity === 'neutral').length} neutral</span>
         </div>
+
+        {/* Category breakdown */}
+        <SignalCategoryBreakdown signals={signals} />
 
         {/* Positive signals preview */}
         {signals.filter((s) => s.polarity === 'positive').length > 0 && (
@@ -279,6 +282,9 @@ function CompareColumn({ entry, onRemove, colIdx, year, quarter }: { entry: Comp
             color="text-emerald-400"
             barColor="bg-emerald-500"
             signals={signals.filter((s) => s.polarity === 'positive').sort((a, b) => b.confidence - a.confidence).slice(0, 3)}
+            ticker={entry.ticker}
+            year={year}
+            quarter={quarter}
           />
         )}
 
@@ -289,6 +295,9 @@ function CompareColumn({ entry, onRemove, colIdx, year, quarter }: { entry: Comp
             color="text-red-400"
             barColor="bg-red-500"
             signals={signals.filter((s) => s.polarity === 'negative').sort((a, b) => b.confidence - a.confidence).slice(0, 3)}
+            ticker={entry.ticker}
+            year={year}
+            quarter={quarter}
           />
         )}
 
@@ -299,6 +308,9 @@ function CompareColumn({ entry, onRemove, colIdx, year, quarter }: { entry: Comp
             color="text-zinc-400"
             barColor="bg-zinc-500"
             signals={signals.filter((s) => s.polarity === 'neutral').sort((a, b) => b.confidence - a.confidence).slice(0, 2)}
+            ticker={entry.ticker}
+            year={year}
+            quarter={quarter}
           />
         )}
 
@@ -312,10 +324,10 @@ function CompareColumn({ entry, onRemove, colIdx, year, quarter }: { entry: Comp
         </Link>
       </Section>
 
-      {/* Guidance count */}
+      {/* Guidance & Risks — expanded */}
       {a?.baseline && (
         <Section title="Guidance & Risks">
-          <div className="flex gap-4 text-xs">
+          <div className="flex gap-4 text-xs mb-2">
             <div>
               <span className="text-zinc-500">Guidance: </span>
               <span className="font-mono text-zinc-200">{a.baseline.forward_guidance.length}</span>
@@ -329,11 +341,68 @@ function CompareColumn({ entry, onRemove, colIdx, year, quarter }: { entry: Comp
               <span className="font-mono text-zinc-200">{a.baseline.participants.length}</span>
             </div>
           </div>
-          <div className="mt-2 space-y-0.5 text-[9px] text-zinc-600">
-            <p>Guidance — forward-looking metrics mentioned with specific values (e.g., FFO raised to $5.30)</p>
-            <p>Risks — risk factors cited by management or raised by analysts during Q&A</p>
-            <p>People — total call participants (executives, sell-side analysts, operator)</p>
-          </div>
+
+          {/* Top guidance items */}
+          {a.baseline.forward_guidance.length > 0 && (
+            <div className="mb-2">
+              <p className="text-[9px] font-semibold text-blue-400 uppercase tracking-wider mb-1">Top Guidance</p>
+              <div className="space-y-1">
+                {a.baseline.forward_guidance.slice(0, 3).map((g, i) => (
+                  <Link
+                    key={i}
+                    href={`/analysis/${entry.ticker}/${year}/${quarter}?tab=summary&sentence=${g.source_sentence_id}`}
+                    className="flex items-start gap-1.5 group"
+                  >
+                    <span className={`text-[9px] font-mono mt-0.5 flex-shrink-0 ${
+                      g.direction === 'raised' ? 'text-emerald-400' :
+                      g.direction === 'lowered' ? 'text-red-400' : 'text-amber-400'
+                    }`}>
+                      {g.direction === 'raised' ? '↑' : g.direction === 'lowered' ? '↓' : '→'}
+                    </span>
+                    <div className="min-w-0">
+                      <span className="text-[10px] text-zinc-300 group-hover:text-zinc-100 transition-colors">
+                        {g.metric}: <span className="font-mono">{g.value}</span>
+                      </span>
+                    </div>
+                    <ExternalLink className="h-2.5 w-2.5 text-zinc-600 group-hover:text-blue-400 flex-shrink-0 mt-0.5 transition-colors" />
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Top risk items */}
+          {a.baseline.risk_factors.length > 0 && (
+            <div>
+              <p className="text-[9px] font-semibold text-amber-400 uppercase tracking-wider mb-1">Top Risks</p>
+              <div className="space-y-1">
+                {a.baseline.risk_factors
+                  .sort((x, y) => {
+                    const sev = { high: 0, medium: 1, low: 2 };
+                    return sev[x.severity] - sev[y.severity];
+                  })
+                  .slice(0, 3)
+                  .map((r, i) => (
+                    <Link
+                      key={i}
+                      href={`/analysis/${entry.ticker}/${year}/${quarter}?tab=transcript&sentence=${r.source_sentence_id}`}
+                      className="flex items-start gap-1.5 group"
+                    >
+                      <span className={`text-[9px] font-mono mt-0.5 flex-shrink-0 ${
+                        r.severity === 'high' ? 'text-red-400' :
+                        r.severity === 'medium' ? 'text-amber-400' : 'text-zinc-500'
+                      }`}>
+                        {r.severity[0].toUpperCase()}
+                      </span>
+                      <span className="text-[10px] text-zinc-300 group-hover:text-zinc-100 transition-colors line-clamp-2 flex-1">
+                        {r.risk}
+                      </span>
+                      <ExternalLink className="h-2.5 w-2.5 text-zinc-600 group-hover:text-blue-400 flex-shrink-0 mt-0.5 transition-colors" />
+                    </Link>
+                  ))}
+              </div>
+            </div>
+          )}
         </Section>
       )}
     </Card>
@@ -361,32 +430,70 @@ function KpiRow({ label, value, context }: { label: string; value?: string; cont
   );
 }
 
+function SignalCategoryBreakdown({ signals }: { signals: ClaudeSignal[] }) {
+  const cats = ['Sector', 'Geography', 'Macro'] as const;
+  const counts = cats.map((c) => ({ label: c, n: signals.filter((s) => s.category === c).length }));
+  const total = signals.length || 1;
+  return (
+    <div className="mb-2.5">
+      <p className="text-[9px] text-zinc-600 mb-1">By category</p>
+      <div className="flex gap-1 h-1 rounded-full overflow-hidden mb-1">
+        {counts.map(({ label, n }) => (
+          <div
+            key={label}
+            style={{ width: `${(n / total) * 100}%` }}
+            className={`${label === 'Sector' ? 'bg-blue-500' : label === 'Geography' ? 'bg-violet-500' : 'bg-orange-500'}`}
+          />
+        ))}
+      </div>
+      <div className="flex gap-2">
+        {counts.map(({ label, n }) => (
+          <span key={label} className="text-[9px] text-zinc-500">
+            <span className={`${label === 'Sector' ? 'text-blue-400' : label === 'Geography' ? 'text-violet-400' : 'text-orange-400'}`}>{label}</span> {n}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function SignalPreviewGroup({
   label,
   color,
   barColor,
   signals,
+  ticker,
+  year,
+  quarter,
 }: {
   label: string;
   color: string;
   barColor: string;
-  signals: Array<{ sentence: string; tag: string; confidence: number; speaker: string }>;
+  signals: Array<{ sentence: string; sentence_id: string; tag: string; confidence: number; speaker: string }>;
+  ticker: string;
+  year: number;
+  quarter: number;
 }) {
   return (
     <div className="mb-2.5">
       <p className={`text-[10px] font-semibold ${color} mb-1`}>{label}</p>
       <div className="space-y-1">
         {signals.map((s, i) => (
-          <div key={i} className="flex gap-1.5 items-start">
+          <Link
+            key={i}
+            href={`/analysis/${ticker}/${year}/${quarter}?tab=sentiment&signal=${s.sentence_id}`}
+            className="flex gap-1.5 items-start group"
+          >
             <div className={`w-0.5 min-h-[16px] rounded-full flex-shrink-0 mt-0.5 ${barColor}`} />
-            <div className="min-w-0">
-              <p className="text-[11px] text-zinc-300 line-clamp-2 leading-tight">{s.sentence}</p>
+            <div className="min-w-0 flex-1">
+              <p className="text-[11px] text-zinc-300 group-hover:text-zinc-100 line-clamp-2 leading-tight transition-colors">{s.sentence}</p>
               <div className="flex items-center gap-1.5 mt-0.5">
                 <Badge variant="outline" className="text-[9px] border-zinc-700 px-1 py-0">{s.tag}</Badge>
                 <span className="text-[9px] text-zinc-600">{s.speaker}</span>
               </div>
             </div>
-          </div>
+            <ExternalLink className="h-2.5 w-2.5 text-zinc-600 group-hover:text-blue-400 flex-shrink-0 mt-0.5 transition-colors" />
+          </Link>
         ))}
       </div>
     </div>
