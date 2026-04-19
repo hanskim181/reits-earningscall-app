@@ -19,14 +19,6 @@ type CalendarEvent = {
   estimated_eps: number | null;
 };
 
-function timingBadge(t: string | null): string {
-  if (!t) return '';
-  if (t === 'before_market') return 'BMO';
-  if (t === 'after_market') return 'AMC';
-  if (t === 'during_market') return 'DMH';
-  return '';
-}
-
 export default function CalendarPage() {
   const router = useRouter();
   const [events, setEvents] = useState<CalendarEvent[]>([]);
@@ -195,9 +187,6 @@ export default function CalendarPage() {
                             title={`${ev.ticker} — ${ev.company_name}`}
                           >
                             <span className="font-mono font-bold">{ev.ticker}</span>
-                            {ev.earnings_timing && (
-                              <span className="ml-1 opacity-70">{timingBadge(ev.earnings_timing)}</span>
-                            )}
                           </button>
                         );
                       })}
