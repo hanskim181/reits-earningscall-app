@@ -216,6 +216,15 @@ export default function CalendarPage() {
                 {mode === 'past' ? 'Recent Earnings' : 'Upcoming Earnings'} ({events.length})
               </h3>
               <div className="space-y-1 max-h-60 overflow-y-auto">
+                {events.length === 0 && (
+                  <div className="text-center py-8">
+                    <p className="text-zinc-500 text-sm">
+                      {mode === 'upcoming'
+                        ? 'No upcoming earnings dates found yet. REIT earnings season typically runs late January through mid-February (Q4) and late April through mid-May (Q1).'
+                        : 'No past earnings events found.'}
+                    </p>
+                  </div>
+                )}
                 {events.slice(0, 30).map((ev, i) => {
                   const colors = getSectorColor(ev.sector);
                   return (

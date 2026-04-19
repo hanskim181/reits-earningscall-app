@@ -56,18 +56,18 @@ function extractDate(entry: RawCalendarEntry | RawUpcomingEntry): string {
 // --- Mode handlers ---
 
 async function handlePast(universe: REIT[], universeMap: Map<string, REIT>): Promise<CalendarEvent[]> {
-  // Top 25 REITs by market cap (universe is already sorted by market_cap_musd desc)
-  const top25 = universe.slice(0, 25);
+  // Top 50 REITs by market cap for broader coverage
+  const top50 = universe.slice(0, 50);
 
   const results = await Promise.allSettled(
-    top25.map((reit) => fetchEarningsCalendar(reit.ticker, false, 4))
+    top50.map((reit) => fetchEarningsCalendar(reit.ticker, false, 4))
   );
 
   const events: CalendarEvent[] = [];
 
   for (let i = 0; i < results.length; i++) {
     const settled = results[i];
-    const reit = top25[i];
+    const reit = top50[i];
 
     if (settled.status !== 'fulfilled' || !settled.value.ok) continue;
 
@@ -96,38 +96,74 @@ async function handlePast(universe: REIT[], universeMap: Map<string, REIT>): Pro
   return events;
 }
 
-async function handleUpcoming(universeMap: Map<string, REIT>): Promise<CalendarEvent[]> {
-  const result = await fetchUpcomingEarnings({ limit: 100 });
-  if (!result.ok) return [];
+async function handleUpcoming(universe: REIT[], universeMap: Map<string, REIT>): Promise<CalendarEvent[]> {
+  // Strategy: fetch earningscalendar for top 50 REITs and find dates in the future
+  const today = new Date().toISOString().slice(0, 10);
+  const top50upcoming = universe.slice(0, 50);
 
-  const entries = result.data as RawUpcomingEntry[];
-  if (!Array.isArray(entries)) return [];
+  const results = await Promise.allSettled(
+    top50upcoming.map((reit) => fetchEarningsCalendar(reit.ticker, false, 2))
+  );
 
   const events: CalendarEvent[] = [];
 
-  for (const entry of entries) {
-    const entryTicker = (entry.ticker ?? '') as string;
-    if (!entryTicker) continue;
+  for (let i = 0; i < results.length; i++) {
+    const settled = results[i];
+    const reitItem = top50upcoming[i];
 
-    const reit = universeMap.get(entryTicker.toUpperCase());
-    if (!reit) continue; // Not in FTSE Nareit universe
+    if (settled.status !== 'fulfilled' || !settled.value.ok) continue;
 
-    const date = extractDate(entry);
-    if (!date) continue;
+    const entries = settled.value.data as RawCalendarEntry[];
+    if (!Array.isArray(entries)) continue;
 
-    events.push({
-      ticker: reit.ticker,
-      company_name: reit.company_name,
-      sector: reit.sector,
-      date,
-      earnings_timing: entry.earnings_timing ?? null,
-      actual_eps: entry.actual_eps ?? null,
-      estimated_eps: entry.estimated_eps ?? null,
-      source: 'API Ninjas (calendar)',
-    });
+    for (const entry of entries) {
+      const date = extractDate(entry);
+      if (!date || date <= today) continue; // only future dates
+
+      events.push({
+        ticker: reitItem.ticker,
+        company_name: reitItem.company_name,
+        sector: reitItem.sector,
+        date,
+        earnings_timing: entry.earnings_timing ?? null,
+        actual_eps: entry.actual_eps ?? null,
+        estimated_eps: entry.estimated_eps ?? null,
+        source: 'API Ninjas (calendar)',
+      });
+    }
   }
 
-  // Sort by date ascending
+  // Also try the upcomingearnings endpoint as supplementary data
+  try {
+    const result = await fetchUpcomingEarnings({ limit: 100 });
+    if (result.ok) {
+      const entries = result.data as RawUpcomingEntry[];
+      if (Array.isArray(entries)) {
+        for (const entry of entries) {
+          const entryTicker = (entry.ticker ?? '') as string;
+          if (!entryTicker) continue;
+          const reit = universeMap.get(entryTicker.toUpperCase());
+          if (!reit) continue;
+          const date = extractDate(entry);
+          if (!date) continue;
+          // Avoid duplicates
+          if (!events.some((e) => e.ticker === reit.ticker && e.date === date)) {
+            events.push({
+              ticker: reit.ticker,
+              company_name: reit.company_name,
+              sector: reit.sector,
+              date,
+              earnings_timing: entry.earnings_timing ?? null,
+              actual_eps: entry.actual_eps ?? null,
+              estimated_eps: entry.estimated_eps ?? null,
+              source: 'API Ninjas (calendar)',
+            });
+          }
+        }
+      }
+    }
+  } catch { /* supplementary — ignore failures */ }
+
   events.sort((a, b) => a.date.localeCompare(b.date));
   return events;
 }
@@ -140,7 +176,7 @@ async function handleMonth(
   // Combine past + upcoming, then filter to the specified month (YYYY-MM)
   const [pastEvents, upcomingEvents] = await Promise.all([
     handlePast(universe, universeMap),
-    handleUpcoming(universeMap),
+    handleUpcoming(universe, universeMap),
   ]);
 
   const all = [...pastEvents, ...upcomingEvents];
@@ -198,7 +234,7 @@ export async function GET(req: NextRequest) {
         events = await handlePast(universe, universeMap);
         break;
       case 'upcoming':
-        events = await handleUpcoming(universeMap);
+        events = await handleUpcoming(universe, universeMap);
         break;
       case 'month':
         events = await handleMonth(month!, universe, universeMap);
