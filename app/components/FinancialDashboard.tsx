@@ -44,7 +44,8 @@ function formatNum(val: number | string | null | undefined, prefix = '', suffix 
   if (typeof val === 'string') return val;
   if (Math.abs(val) >= 1e9) return `${prefix}${(val / 1e9).toFixed(2)}B${suffix}`;
   if (Math.abs(val) >= 1e6) return `${prefix}${(val / 1e6).toFixed(1)}M${suffix}`;
-  return `${prefix}${val.toFixed(2)}${suffix}`;
+  // Round to 2 decimal places to fix floating-point display (e.g. 0.41000000000000003 → 0.41)
+  return `${prefix}${parseFloat(val.toFixed(2))}${suffix}`;
 }
 
 export function FinancialDashboard({ data, loading, error }: Props) {
@@ -78,15 +79,9 @@ export function FinancialDashboard({ data, loading, error }: Props) {
     { label: 'Op. Cash Flow', value: formatNum(cq.operating_cash_flow.value, '$'), source: cq.operating_cash_flow.source },
   ];
 
-  if (cq.ffo_per_share) {
-    rows.push({ label: 'FFO/Share', value: String(cq.ffo_per_share.value ?? '—'), source: cq.ffo_per_share.source, isReit: true });
-  }
-  if (cq.same_store_noi_growth) {
-    rows.push({ label: 'SS NOI Growth', value: String(cq.same_store_noi_growth.value ?? '—'), source: cq.same_store_noi_growth.source, isReit: true });
-  }
-  if (cq.occupancy) {
-    rows.push({ label: 'Occupancy', value: String(cq.occupancy.value ?? '—'), source: cq.occupancy.source, isReit: true });
-  }
+  // Claude-extracted KPIs (FFO, SSNOI, Occupancy) are shown in the Insights Panel
+  // rather than here, to avoid displaying inconsistently formatted values from
+  // different transcript styles.
 
   return (
     <Card className="bg-zinc-900 border-zinc-700 p-4">
