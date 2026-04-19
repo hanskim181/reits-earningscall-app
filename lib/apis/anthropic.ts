@@ -101,8 +101,51 @@ async function callClaudeForJSON<T>(
       `[claude] ${promptKind} ${ticker} ${year}Q${quarter} | ${elapsed}ms | in:${inputTokens} out:${outputTokens} | model:${_activeModel}`
     );
 
-    const cleaned = text.trim().replace(/^```json\s*/i, '').replace(/```\s*$/, '').trim();
-    return { parsed: JSON.parse(cleaned), inputTokens, outputTokens };
+    // Robust JSON extraction:
+    // 1. Strip markdown code fences
+    // 2. Find the outermost JSON object or array
+    // 3. Ignore any trailing prose after the JSON
+    let cleaned = text.trim().replace(/^```json\s*/i, '').replace(/```\s*$/, '').trim();
+
+    // Find the first { or [ and extract the matching JSON structure
+    const jsonStart = cleaned.search(/[{\[]/);
+    if (jsonStart > 0) {
+      cleaned = cleaned.slice(jsonStart);
+    }
+
+    // Try parsing as-is first
+    try {
+      return { parsed: JSON.parse(cleaned), inputTokens, outputTokens };
+    } catch {
+      // If that fails, try to find the end of the JSON by matching braces/brackets
+      const startChar = cleaned[0];
+      const endChar = startChar === '{' ? '}' : ']';
+      let depth = 0;
+      let inString = false;
+      let escape = false;
+      let endPos = -1;
+
+      for (let i = 0; i < cleaned.length; i++) {
+        const ch = cleaned[i];
+        if (escape) { escape = false; continue; }
+        if (ch === '\\') { escape = true; continue; }
+        if (ch === '"') { inString = !inString; continue; }
+        if (inString) continue;
+        if (ch === startChar) depth++;
+        if (ch === endChar) {
+          depth--;
+          if (depth === 0) { endPos = i; break; }
+        }
+      }
+
+      if (endPos > 0) {
+        const extracted = cleaned.slice(0, endPos + 1);
+        return { parsed: JSON.parse(extracted), inputTokens, outputTokens };
+      }
+
+      // Last resort: throw to trigger retry
+      throw new Error(`Could not extract valid JSON from response (length: ${cleaned.length})`);
+    }
   };
 
   let result;
