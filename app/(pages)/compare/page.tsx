@@ -304,7 +304,7 @@ function CompareColumn({ entry, onRemove, colIdx, year, quarter }: { entry: Comp
 
         {/* Link to full analysis */}
         <Link
-          href={`/analysis/${entry.ticker}/${year}/${quarter}`}
+          href={`/analysis/${entry.ticker}/${year}/${quarter}?tab=sentiment`}
           className="flex items-center gap-1 mt-3 text-[10px] text-blue-400 hover:text-blue-300 transition-colors"
         >
           <ExternalLink className="h-3 w-3" />

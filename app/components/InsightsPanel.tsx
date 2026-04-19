@@ -42,6 +42,7 @@ type Props = {
   ticker: string;
   year: number;
   quarter: number;
+  defaultTab?: string;
 };
 
 export function InsightsPanel({
@@ -53,6 +54,7 @@ export function InsightsPanel({
   ticker,
   year,
   quarter,
+  defaultTab = 'summary',
 }: Props) {
   if (loading) return <LoadingSkeleton />;
 
@@ -66,7 +68,7 @@ export function InsightsPanel({
   }
 
   return (
-    <Tabs defaultValue="summary" className="h-full flex flex-col">
+    <Tabs defaultValue={defaultTab} className="h-full flex flex-col">
       <TabsList className="w-full justify-start rounded-none border-b border-zinc-800 bg-transparent px-4 flex-shrink-0">
         <TabsTrigger value="summary" className="text-xs data-[state=active]:bg-zinc-800">
           Summary

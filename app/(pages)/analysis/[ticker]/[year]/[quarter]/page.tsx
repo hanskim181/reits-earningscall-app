@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState, useCallback } from 'react';
-import { useParams } from 'next/navigation';
+import { useParams, useSearchParams } from 'next/navigation';
 import { TranscriptViewer } from '@/app/components/TranscriptViewer';
 import { InsightsPanel } from '@/app/components/InsightsPanel';
 import { FinancialDashboard } from '@/app/components/FinancialDashboard';
@@ -49,6 +49,8 @@ export default function AnalysisPage() {
   const { ticker, year, quarter } = params;
   const yearNum = parseInt(year, 10);
   const quarterNum = parseInt(quarter, 10);
+  const searchParams = useSearchParams();
+  const defaultTab = searchParams.get('tab') || 'summary';
 
   // Transcript state
   const [rawTranscript, setRawTranscript] = useState<NinjasTranscriptResponse | null>(null);
@@ -278,6 +280,7 @@ export default function AnalysisPage() {
             error={analysisError} errors={analysisErrors}
             onHighlightSentence={handleHighlight}
             ticker={ticker} year={yearNum} quarter={quarterNum}
+            defaultTab={defaultTab}
           />
         </div>
 
