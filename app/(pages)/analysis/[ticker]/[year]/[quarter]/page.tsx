@@ -50,7 +50,10 @@ export default function AnalysisPage() {
   const yearNum = parseInt(year, 10);
   const quarterNum = parseInt(quarter, 10);
   const searchParams = useSearchParams();
-  const defaultTab = searchParams.get('tab') || 'summary';
+  const rawTab = searchParams.get('tab') || 'summary';
+  // 'transcript' is not a real tab — guidance/risk deep-links use it as a sentinel
+  const defaultTab = rawTab === 'transcript' ? 'summary' : rawTab;
+  const deepLinkSentenceId = searchParams.get('sentence') || searchParams.get('signal');
 
   // Transcript state
   const [rawTranscript, setRawTranscript] = useState<NinjasTranscriptResponse | null>(null);
@@ -146,6 +149,13 @@ export default function AnalysisPage() {
     // 4. Prices — needs earnings date, so we fetch after transcript is ready
     // We'll trigger it after transcript loads
   }, [ticker, year, quarter, yearNum, quarterNum]);
+
+  // Deep-link: highlight a sentence from URL params once transcript is loaded
+  useEffect(() => {
+    if (formatted && deepLinkSentenceId) {
+      handleHighlight(deepLinkSentenceId);
+    }
+  }, [formatted, deepLinkSentenceId, handleHighlight]);
 
   // Fetch prices once we have transcript (need date + earnings_timing)
   useEffect(() => {
