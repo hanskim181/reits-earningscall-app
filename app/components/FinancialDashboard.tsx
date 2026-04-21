@@ -16,11 +16,16 @@ type FinancialsData = {
     period_label: string;
     filing_date: string;
     revenue: SourcedValue;
+    operating_income: SourcedValue;
     net_income: SourcedValue;
     eps: SourcedValue;
+    depreciation_and_amortization: SourcedValue;
+    interest_expense: SourcedValue;
+    total_assets: SourcedValue;
     total_debt: SourcedValue;
     cash: SourcedValue;
     operating_cash_flow: SourcedValue;
+    dividend_quarterly: SourcedValue;
     ffo_per_share: SourcedValue | null;
     same_store_noi_growth: SourcedValue | null;
     occupancy: SourcedValue | null;
@@ -72,11 +77,15 @@ export function FinancialDashboard({ data, loading, error }: Props) {
   const cq = data.current_quarter;
   const rows: Array<{ label: string; value: string; source: string; isReit?: boolean }> = [
     { label: 'Revenue', value: formatNum(cq.revenue.value, '$'), source: cq.revenue.source },
+    { label: 'Operating Income', value: formatNum(cq.operating_income.value, '$'), source: cq.operating_income.source },
     { label: 'Net Income', value: formatNum(cq.net_income.value, '$'), source: cq.net_income.source },
     { label: 'EPS (Diluted)', value: formatNum(cq.eps.value, '$'), source: cq.eps.source },
+    { label: 'D&A', value: formatNum(cq.depreciation_and_amortization.value, '$'), source: cq.depreciation_and_amortization.source },
+    { label: 'Interest Expense', value: formatNum(cq.interest_expense.value, '$'), source: cq.interest_expense.source },
+    { label: 'Total Assets', value: formatNum(cq.total_assets.value, '$'), source: cq.total_assets.source },
     { label: 'Debt', value: formatNum(cq.total_debt.value, '$'), source: cq.total_debt.source },
     { label: 'Cash', value: formatNum(cq.cash.value, '$'), source: cq.cash.source },
-    { label: 'Op. Cash Flow', value: formatNum(cq.operating_cash_flow.value, '$'), source: cq.operating_cash_flow.source },
+    { label: 'Dividend', value: formatNum(cq.dividend_quarterly.value, '$'), source: cq.dividend_quarterly.source },
   ];
 
   // Claude-extracted KPIs (FFO, SSNOI, Occupancy) are shown in the Insights Panel

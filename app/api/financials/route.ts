@@ -18,6 +18,9 @@ interface EarningsData {
     total_revenue: number;
     net_income: number;
     earnings_per_share_diluted: number;
+    operating_income: number | null;
+    depreciation_and_amortization: number | null;
+    interest_expense: number | null;
     [key: string]: unknown;
   };
   balance_sheet: {
@@ -32,6 +35,7 @@ interface EarningsData {
   cash_flow: {
     operating_cash_flow: number;
     free_cash_flow: number;
+    dividends_paid: number | null;
     [key: string]: unknown;
   };
   filing_info: {
@@ -140,7 +144,27 @@ export async function GET(req: NextRequest) {
       }
     }
 
-    // 5. Build trailing 8Q array (current + 7 prior)
+    // 5. Compute quarterly dividend (API Ninjas returns YTD cumulative — subtract prior quarter YTD)
+    let dividendQuarterly: number | null = null;
+    const currentYtdDividend = current.cash_flow?.dividends_paid ?? null;
+    if (currentYtdDividend !== null) {
+      if (quarterNum === 1) {
+        // Q1 YTD = Q1 quarterly
+        dividendQuarterly = currentYtdDividend;
+      } else {
+        // Q2-Q4: subtract prior quarter YTD
+        const priorYtdSettled = priorResults[0]; // Q(n-1) at index 0
+        if (priorYtdSettled.status === 'fulfilled' && priorYtdSettled.value.ok) {
+          const priorData = priorYtdSettled.value.data as EarningsData;
+          const priorYtdDividend = priorData.cash_flow?.dividends_paid ?? null;
+          if (priorYtdDividend !== null) {
+            dividendQuarterly = currentYtdDividend - priorYtdDividend;
+          }
+        }
+      }
+    }
+
+    // 6. Build trailing 8Q array (current + 7 prior)
     const apiSource: SourceLabel = 'API Ninjas (earnings)';
     const filingDate = current.filing_info?.filing_date ?? new Date().toISOString().slice(0, 10);
     const periodEndDate = current.filing_info?.period_end_date ?? filingDate;
@@ -183,15 +207,19 @@ export async function GET(req: NextRequest) {
       }
     }
 
-    // 6. Build and return response
+    // 7. Build and return response
     const response = {
       ticker: tickerUpper,
       current_quarter: {
         period_label: `Q${quarterNum} ${yearNum}`,
         filing_date: filingDate,
         revenue: sourced(current.income_statement?.total_revenue ?? null, apiSource, periodEndDate),
+        operating_income: sourced(current.income_statement?.operating_income ?? null, apiSource, periodEndDate),
         net_income: sourced(current.income_statement?.net_income ?? null, apiSource, periodEndDate),
         eps: sourced(current.income_statement?.earnings_per_share_diluted ?? null, apiSource, periodEndDate),
+        depreciation_and_amortization: sourced(current.income_statement?.depreciation_and_amortization ?? null, apiSource, periodEndDate),
+        interest_expense: sourced(current.income_statement?.interest_expense ?? null, apiSource, periodEndDate),
+        total_assets: sourced(current.balance_sheet?.total_assets ?? null, apiSource, periodEndDate),
         total_debt: sourced(
           current.balance_sheet?.total_debt
             ?? current.balance_sheet?.long_term_debt
@@ -200,6 +228,7 @@ export async function GET(req: NextRequest) {
         ),
         cash: sourced(current.balance_sheet?.cash_and_equivalents ?? null, apiSource, periodEndDate),
         operating_cash_flow: sourced(current.cash_flow?.operating_cash_flow ?? null, apiSource, periodEndDate),
+        dividend_quarterly: sourced(dividendQuarterly, apiSource, periodEndDate),
         ffo_per_share: ffoPerShare,
         same_store_noi_growth: sameStoreNoiGrowth,
         occupancy: occupancy,

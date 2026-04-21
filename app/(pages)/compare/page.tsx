@@ -202,15 +202,8 @@ function CompareColumn({ entry, onRemove, colIdx, year, quarter }: { entry: Comp
   }
 
   const se = a?.sentiment;
-  const kpis = a?.kpis ?? [];
   const signals = a?.signals ?? [];
   const themes = a?.summary?.key_themes ?? [];
-
-  // Extract key KPIs
-  const findKpi = (metric: string) => kpis.find((k) => k.metric === metric);
-  const ffo = findKpi('FFO');
-  const ssnoi = findKpi('same_store_noi');
-  const occ = findKpi('occupancy');
 
   return (
     <Card className={`${bg} border-zinc-700 p-4`}>
@@ -242,16 +235,6 @@ function CompareColumn({ entry, onRemove, colIdx, year, quarter }: { entry: Comp
           </div>
         </Section>
       )}
-
-      {/* Key KPIs */}
-      <Section title="Key KPIs">
-        <div className="space-y-1">
-          <KpiRow label="FFO" value={ffo?.value} context={ffo?.context} />
-          <KpiRow label="SS NOI" value={ssnoi?.value} context={ssnoi?.context} />
-          <KpiRow label="Occupancy" value={occ?.value} context={occ?.context} />
-        </div>
-        <div className="text-[10px] text-zinc-600 mt-1">{kpis.length} total KPIs extracted</div>
-      </Section>
 
       {/* Top Themes */}
       <Section title="Key Themes">
@@ -418,17 +401,6 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
-function KpiRow({ label, value, context }: { label: string; value?: string; context?: string }) {
-  return (
-    <div className="flex items-center justify-between">
-      <span className="text-xs text-zinc-400">{label}</span>
-      <div className="text-right">
-        <span className="text-sm font-mono text-zinc-100">{value ?? '—'}</span>
-        {context && <span className="text-[10px] text-zinc-600 ml-1">{context.slice(0, 25)}</span>}
-      </div>
-    </div>
-  );
-}
 
 function SignalCategoryBreakdown({ signals }: { signals: ClaudeSignal[] }) {
   const cats = ['Sector', 'Geography', 'Macro'] as const;
