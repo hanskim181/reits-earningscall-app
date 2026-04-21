@@ -138,7 +138,11 @@ export async function GET(req: NextRequest) {
       if (noiEntry) {
         sameStoreNoiGrowth = sourced(noiEntry.value, 'Claude analysis', kpiDate);
       }
-      const occEntry = cachedKpis.find((k) => k.metric === 'occupancy');
+      const occEntries = cachedKpis.filter((k) => k.metric === 'occupancy');
+      const occEntry = occEntries.find((k) => {
+        const num = parseFloat(k.value.replace(/[^0-9.]/g, ''));
+        return num >= 50 && num <= 100;
+      }) ?? occEntries[0];
       if (occEntry) {
         occupancy = sourced(occEntry.value, 'Claude analysis', kpiDate);
       }
